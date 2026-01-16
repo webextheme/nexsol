@@ -1,0 +1,125 @@
+/*===== Start pricing Style2 =====*/
+.pricing-style2 {
+  .pricing-item {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: var(--bg-white);
+    border: 1px solid var(--theme-widget-border-color);
+    border-radius: 15px;
+    @include transition(all 300ms ease-out 0s);
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 25px;
+    }
+    .price-content {
+      font-size: 64px;
+      line-height: 1;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: flex-end;
+      gap: 15px;
+      font-family: var(--heading-font);
+      @media screen and (max-width: 1024px) {
+        margin-bottom: 35px;
+      }
+      .price-currency {
+        font-size: 48px;
+        font-weight: 600;
+        color: var(--heading-font-color);
+      }
+      .price-amount {
+        font-size: 48px;
+        padding-bottom: 2px;
+        font-weight: 600;
+        margin-left: -12px;
+        color: var(--heading-font-color);
+      }
+      .price-unit {
+        display: inline-block;
+        font-size: 16px;
+        line-height: 2;
+        margin-left: -10px;
+      }
+    }
+    .pricing-label {
+      color: var(--text-webex-primary-color);
+      position: absolute;
+      left: 30px;
+      top: 0;
+      background: var(--webex-primary-color);
+      padding: 2px 20px;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 600;
+      font-family: var(--heading-font);
+      letter-spacing: 1px;
+      border-radius: 0 0 05px 5px;
+    }
+    &:hover {
+      transform: translateY(-10px);
+    }
+    .table-header {
+      position: relative;
+      display: block;
+      .pricing-plan-name {
+        position: relative;
+        display: inline-block;
+        font-size: 32px;
+        font-family: var(--heading-font);
+        font-weight: 600;
+        margin-bottom: 0;
+      }
+      .pricing-plan-description {
+        padding-bottom: 0;
+      }
+    }
+    .table-content {
+      position: relative;
+      display: block;
+      .pricing_features_title {
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 0;
+        color: var(--heading-font-color);
+        font-family: var(--heading-font);
+      }
+      .list-items {
+        padding: 0;
+        margin-bottom: 0;
+        color: var(--heading-font-color);
+        li {
+          padding: 10px 0 0 0;
+          position: relative;
+          .pricing_list_icon {
+            color: var(--webex-primary-color);
+            margin-right: 10px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .table-footer {
+      padding-bottom: 20px;
+      .nexsol_btn_block_style3 {
+        &:hover {
+          .nexsol-btn-primary {
+            background: #fff;
+            color: #000;
+            &:hover {
+              color: #000;
+            }
+          }
+          .nexsol-btn-circle {
+            background: #fff;
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}

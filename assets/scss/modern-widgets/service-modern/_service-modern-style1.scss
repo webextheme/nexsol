@@ -1,0 +1,64 @@
+/*===== Start Modern Services Style1 =====*/
+.modern-services-block-style1 {
+  .modern-services-thumb-wrapper {
+    position: relative;
+    border-radius: 10px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+    img {
+      height: 470px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      object-position: top;
+    }
+    .modern-services-content-wrapper {
+      position: absolute;
+      top: 50%;
+      left: 60px;
+      background: #fff;
+      padding: 30px;
+      max-width: 365px;
+      transform: translate(0, -50%);
+      border-radius: 10px;
+      @media screen and (max-width: 767px) {
+        left: 30px;
+        right: 30px;
+        max-width: 100%;
+      }
+      .modern-services-mini-thumb-area {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 60px;
+        .modern-services-icon {
+          .icon {
+            i {
+              font-size: 54px;
+              color: var(--heading-font-color);
+            }
+          }
+        }
+        .modern-services-mini-thumb {
+          img {
+            width: 172px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 5px;
+            @media screen and (max-width: 425px) {
+              width: 120px;
+              height: 72px;
+            }
+          }
+        }
+      }
+      .modern-services-title {
+        margin-bottom: 10px;
+      }
+      .modern-services-description {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

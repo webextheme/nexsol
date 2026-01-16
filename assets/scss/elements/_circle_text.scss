@@ -1,0 +1,96 @@
+/*========================================*/
+/*-------------- [_Circle_Text] ----------*/
+/*========================================*/
+.circle-text-box {
+  padding: 12px;
+  position: relative;
+  border-radius: 50%;
+  border: 1px solid #00000026;
+  background-color: #02010100;
+  width: 170px;
+}
+.circle-text-box .circle-text-icon,
+.circle-text-box .circle-text-svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #00000026;
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle-text-box .circle-text-inner-box text {
+  font-size: 11px;
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.circle-text-box .circle-text-inner-box svg {
+  position: relative;
+  left: 0;
+  top: 0;
+  -webkit-animation-name: circle-text_rotate;
+  -moz-animation-name: circle-text_rotate;
+  -ms-animation-name: circle-text_rotate;
+  -o-animation-name: circle-text_rotate;
+  animation-name: circle-text_rotate;
+  -webkit-animation-duration: 20s;
+  -moz-animation-duration: 20s;
+  -ms-animation-duration: 20s;
+  -o-animation-duration: 20s;
+  animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+@-webkit-keyframes circle-text_rotate {
+  from {
+    -webkit-transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes circle-text_rotate {
+  from {
+    -moz-transform: rotate(0);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-ms-keyframes circle-text_rotate {
+  from {
+    -ms-transform: rotate(0);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+  }
+}
+@-o-keyframes circle-text_rotate {
+  from {
+    -o-transform: rotate(0);
+  }
+  to {
+    -o-transform: rotate(360deg);
+  }
+}
+@keyframes circle-text_rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

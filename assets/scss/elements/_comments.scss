@@ -1,0 +1,311 @@
+/*========================================*/
+/*-------------- [_Comments] -------------*/
+/*========================================*/
+.comments-area,
+.wp-block-post-comments-form {
+  margin-top: 60px;
+  clear: both;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  // display: inline-block;
+  .comments-title {
+    margin-bottom: 10px;
+  }
+  #respond {
+    clear: both;
+    position: relative;
+    .logged-in-as {
+      padding-bottom: 20px;
+      margin-top: -20px;
+    }
+    .comment__form-title {
+      margin-bottom: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      #cancel-comment-reply-link {
+        color: var(--webex-primary-color);
+        text-transform: capitalize;
+        font-weight: 500;
+        font-family: var(--body-font);
+        font-size: 16px;
+        vertical-align: middle;
+      }
+    }
+  }
+  .title-comments {
+    margin-bottom: 30px;
+  }
+  .comment-lists {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+    .children {
+      list-style-type: none;
+      padding-left: 0;
+      margin-left: 40px;
+      @media (max-width: 767px) {
+        margin-left: 15px;
+      }
+    }
+    .trackback,
+    .pingback,
+    .comment {
+      .comment-body {
+        position: relative;
+        padding-left: 120px;
+        min-height: 100px;
+        margin-bottom: 40px;
+        @media (max-width: 767px) {
+          padding-left: 0;
+        }
+        .comment-meta {
+          position: relative;
+          margin-bottom: 10px;
+          .avatar {
+            position: absolute;
+            left: -120px;
+            top: 5px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            width: 90px;
+            height: auto;
+            @media (max-width: 767px) {
+              display: none;
+            }
+          }
+          cite {
+            font-weight: 600;
+            color: var(--heading-font-color);
+            font-style: normal;
+            font-size: 1.1em;
+            a {
+              font-weight: 600;
+              color: var(--heading-font-color);
+              font-style: normal;
+              font-size: 1.1em;
+            }
+          }
+
+          .comment-date {
+            time {
+              font-size: 14px;
+              color: #8b8b8b;
+              position: relative;
+              padding-left: 20px;
+              &.post__commenet-date {
+                margin-right: 10px;
+                &:after {
+                  position: absolute;
+                  content: "\f073";
+                  font-family: "Font Awesome 5 Free";
+                  left: 0;
+                  color: var(--webex-primary-color);
+                }
+              }
+              &.post__commenet-time {
+                &:after {
+                  position: absolute;
+                  content: "\f017";
+                  font-family: "Font Awesome 5 Free";
+                  left: 0;
+                  color: var(--webex-primary-color);
+                }
+              }
+            }
+          }
+        }
+        .comment-content {
+          padding-bottom: 40px;
+          border-bottom: 1px solid;
+          border-color: var(--theme-widget-border-color);
+          .comment-text {
+            p {
+              margin: 0;
+              padding: 0;
+            }
+          }
+          .reply {
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: 16px;
+            a {
+              color: var(--webex-primary-color);
+              &.comment-reply-link {
+                margin-right: 20px;
+                color: var(--webex-primary-color);
+                position: relative;
+                padding-left: 25px;
+                &:before {
+                  position: absolute;
+                  left: 0;
+                  top: 50%;
+                  margin-top: -7px;
+                  content: "\e95c";
+                  font-family: "webexbaseicon";
+                  -webkit-font-smoothing: antialiased;
+                  -moz-osx-font-smoothing: grayscale;
+                  display: inline-block;
+                  font-style: normal;
+                  font-variant: normal;
+                  line-height: 1;
+                  vertical-align: middle;
+                }
+                &:hover {
+                  color: var(--heading-font-color);
+                }
+              }
+              &.comment-edit-link {
+                color: var(--webex-primary-color);
+                position: relative;
+                padding-left: 25px;
+                &:before {
+                  position: absolute;
+                  left: 0;
+                  top: 50%;
+                  margin-top: -7px;
+                  content: "\e97a";
+                  font-family: "webexbaseicon";
+                  -webkit-font-smoothing: antialiased;
+                  -moz-osx-font-smoothing: grayscale;
+                  display: inline-block;
+                  font-style: normal;
+                  font-variant: normal;
+                  line-height: 1;
+                  vertical-align: middle;
+                }
+                &:hover {
+                  color: var(--heading-font-color);
+                }
+              }
+            }
+          }
+        }
+        #respond {
+          margin-top: 0;
+          border-top: none;
+          border-radius: 0;
+          padding: 23px 30px 30px 30px;
+          background: #00000008;
+        }
+      }
+    }
+    .trackback,
+    .pingback {
+      .comment-body {
+        padding-left: 0;
+      }
+    }
+  }
+
+  #commentform {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    clear: both;
+    p {
+      padding: 0px 15px;
+      margin: 0;
+      &.logged-in-as {
+        padding-bottom: 20px;
+        margin-top: -20px;
+        a {
+          color: var(--webex-primary-color);
+        }
+      }
+    }
+    label {
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+      font-size: 0.9em;
+      display: inherit;
+    }
+    .comment-notes {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+    .comment-form-author,
+    .comment-form-email,
+    .comment-form-url {
+      flex: 0 0 100%;
+      max-width: 100%;
+      order: 1;
+      margin-bottom: 30px;
+      @media (min-width: 1024px) {
+        flex: 0 0 33.3333333333%;
+        max-width: 33.3333333333%;
+      }
+      input {
+        width: 100%;
+      }
+    }
+    .comment-form-comment {
+      flex: 0 0 100%;
+      max-width: 100%;
+      order: 2;
+      textarea {
+        width: 100%;
+      }
+    }
+    .form-submit {
+      flex: 0 0 100%;
+      max-width: 100%;
+      order: 3;
+      //=======WordPress Comment Button=======//
+      button,
+      input[type="button"],
+      input[type="reset"],
+      input[type="submit"] {
+        background: var(--webex-primary-color);
+        color: var(--text-webex-primary-color);
+        padding: 12px 25px;
+        border-radius: 5px;
+        display: inline-block;
+        -webkit-appearance: none;
+        border: 1px solid transparent;
+        @include transition(all 300ms ease-out 0s);
+        &:hover {
+          background: var(--webex-primary-color);
+          color: var(--text-webex-primary-color);
+          border-color: var(--theme-border-color);
+        }
+      }
+    }
+    .comment-form-cookies-consent {
+      display: flex;
+      line-height: 1;
+      margin-bottom: 15px;
+      width: 100%;
+      label {
+        padding-left: 10px;
+        text-transform: inherit;
+        font-weight: 500;
+        margin-top: 7px;
+      }
+    }
+  }
+}
+
+.comments-area h1,
+.blog-details__content h1,
+.comment-content h2,
+.blog-details__content h2,
+.comment-content h3,
+.blog-details__content h3,
+.comment-content h4,
+.blog-details__content h4,
+.comment-content h5,
+.blog-details__content h5,
+.comment-content h6,
+.blog-details__content h6 {
+  margin-bottom: 1rem;
+}
+.wp-block-post-comments-form .comment-reply-title {
+  margin-bottom: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

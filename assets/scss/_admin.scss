@@ -1,0 +1,35 @@
+/*========================================*/
+/*----------------- [_Admin] -------------*/
+/*========================================*/
+.wp-admin ul li#wp-admin-bar-redux_demo > a,
+.wp-admin ul li#wp-admin-bar-redux_demo:hover > a {
+  background: linear-gradient(45deg, #e3164c, #df555e);
+  color: #fff;
+}
+.wp-admin ul li#wp-admin-bar-redux_demo > a span:before {
+  color: #fff;
+}
+
+#wp-admin-bar-nexsol-options > a {
+  background: linear-gradient(45deg, #e3164c, #df555e) !important;
+  color: #ffffff !important;
+}
+#wp-admin-bar-nexsol-options:hover > a,
+#wp-admin-bar-nexsol-options > a:hover {
+  background: linear-gradient(-45deg, #e3164c, #df555e) !important;
+  color: #ffffff !important;
+}
+#wp-admin-bar-nexsol-options a span.ab-icon::before,
+#wp-admin-bar-nexsol-options:hover a.ab-item span.ab-icon::before {
+  color: #ffffff !important;
+}
+.nexsol-custom-admin-icon {
+  margin-top: 2px !important;
+}
+.nexsol-custom-admin-icon:before,
+#toplevel_page_nexsol_menu_slug .wp-menu-image:before {
+  color: #b2f32c !important;
+}
+.nexsol-custom-admin-icon:before {
+  color: #b2f32c !important;
+}

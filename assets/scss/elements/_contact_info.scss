@@ -1,0 +1,58 @@
+/*========================================*/
+/*------------ [_Contact_Info] -----------*/
+/*========================================*/
+.nexsol-contact-info {
+  display: flex;
+  align-items: center;
+  .icon {
+    border-radius: 50%;
+    margin-right: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-shrink: 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    width: 58px;
+    height: 58px;
+    font-size: 24px;
+    color: var(--text-webex-primary-color);
+    background: var(--webex-primary-color);
+    i {
+      display: inline-flex;
+    }
+  }
+  .contact {
+    .label {
+      padding: 0;
+      margin: 0;
+      color: var(--body-font-color);
+    }
+    .info {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      .item {
+        color: var(--heading-font-color);
+        a {
+          display: inline-block;
+          line-height: 1.4;
+          color: var(--heading-font-color);
+          -webkit-transition: all 0.3s ease;
+          -o-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+          position: relative;
+          &:hover {
+            color: var(--webex-primary-color);
+          }
+        }
+      }
+    }
+  }
+}

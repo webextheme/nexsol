@@ -1,0 +1,39 @@
+/*===== Start Funfact Style2 =====*/
+.funfact-block-style2 {
+  position: relative;
+  @media screen and (max-width: 425px) {
+    text-align: center;
+  }
+  .funfact-icon {
+    z-index: 0;
+    position: relative;
+    font-size: 52px;
+    color: #fff;
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+  .count-box {
+    display: flex;
+    align-items: center;
+    align-content: flex-end;
+    .counting-number {
+      font-size: 58px;
+      line-height: 1;
+      font-weight: 600;
+      color: #fff;
+      display: inline-block;
+    }
+    .post-symbol {
+      font-size: 58px;
+      line-height: 1;
+      font-weight: 600;
+      color: #fff;
+    }
+  }
+  .funfact-title {
+    margin-top: 5px;
+    color: #bdbcbf;
+    font-size: 15px;
+    display: inline-block;
+  }
+}

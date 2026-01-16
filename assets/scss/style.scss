@@ -1,0 +1,145 @@
+/*
+============================================
+------------ [CSS_INDEXING_START] ----------
+============================================
+## [_Google_Fonts]
+## [_Imported_CSS_Plugins]
+## [_Reset_Styles]
+## [_Typography]
+## [_Global]
+## [_Header]
+## [_Footer]
+## [_widget]
+## [_widget_Common]
+## [_Colors]
+## [_Custom_Animations]
+## [_Home_Slider]
+## [_Page_Title]
+
+## [_Accordion]
+## [_Faqs]
+## [_Clients]
+## [_Skills]
+## [_Buttons]
+## [_Form]
+## [_Comments]
+## [_Section_Title]
+## [_Title_Lines]
+## [_Features]
+## [_Featured_Icon_Box]
+## [_Icon_Box]
+## [_Contact_Info]
+## [_Info_Box]
+## [_Circle_Text]
+## [_Why_Choose_Us]
+## [_Pricing_Tables]
+## [_Funfact]
+## [_Social_List]
+## [_Newsletter]
+## [_Working_Process]
+## [_Working_Hours]
+## [_Moving_Text]
+## [_Scroll_To_Top]
+## [_Call_To_Action]
+## [_Object_Animaiton]
+## [_Custom_Effects]
+## [_Video_Popup]
+## [_Unit_Test]
+
+## [_Section_About]
+## [_Section_Service]
+## [_Section_Single_Service]
+## [_Section_Project]
+## [_Section_Single_Project]
+## [_Section_Portfolio]
+## [_Section_News]
+## [_Section_Single_News]
+## [_Section_Team]
+## [_Section_Single_Team]
+## [_Section_Testimonials]
+## [_Section_Case_Study]
+## [_Divider]
+## [_Utility]
+===========================================
+---------- [CSS_INDEXING_END] -------------
+===========================================
+*/
+
+@import "_variables";
+@import "_variables_dark";
+@import "_mixin";
+@import "_reset";
+@import "_typography";
+@import "_global";
+@import "_preloader";
+@import "_mobile_nav.scss";
+@import "_mega_menu.scss";
+@import "_footer";
+@import "_widget";
+@import "_widget_common";
+@import "_colors";
+@import "_custom_animations";
+@import "_elementor_animations";
+@import "_home_slider";
+@import "_layout_container";
+@import "_page_title";
+@import "_carousel_nav";
+@import "_admin";
+@import "_unit_test";
+//====== Elements =========//
+@import "elements/_faqs";
+@import "elements/_skills";
+@import "elements/_form";
+@import "elements/_comments";
+@import "elements/_title_lines";
+@import "elements/_award_box";
+@import "elements/_featured_icon_box";
+@import "elements/_icon_box";
+@import "elements/_info_box";
+@import "elements/_circle_text";
+@import "elements/_contact_info";
+@import "elements/_why_choose_us";
+@import "elements/_social_list";
+@import "elements/_list_icon";
+@import "elements/_newsletter";
+@import "elements/_working_hours";
+@import "elements/_moving_text";
+@import "elements/_scroll_to_top";
+@import "elements/_call_to_action";
+@import "elements/_object_animaiton";
+@import "elements/_custom_effects";
+//====== Element Styles =========//
+@import "widgets/accordion/accordion";
+@import "widgets/clients/clients";
+@import "widgets/features/features";
+@import "widgets/buttons/buttons";
+@import "widgets/section-title/section-title";
+@import "widgets/funfact/funfact";
+@import "widgets/headers/headers";
+@import "widgets/pricing/pricing";
+@import "widgets/working-steps/working-steps";
+@import "widgets/show-more/show-more";
+@import "widgets/video-popup/video-popup";
+@import "widgets/team/team";
+@import "widgets/services/services";
+@import "widgets/testimonials/testimonials";
+//========= Modern Elementor Widgets ==========//
+@import "modern-widgets/awards-modern/awards-modern";
+@import "modern-widgets/features-modern/features-modern";
+@import "modern-widgets/service-modern/service-modern";
+@import "modern-widgets/team-modern/team-modern";
+@import "modern-widgets/project-modern/project-modern";
+//========= Elementor Widgets ==========//
+@import "widgets/news/news";
+@import "widgets/projects/projects";
+@import "widgets/gallery/gallery";
+@import "widgets/products/products";
+//====== Sections =========//
+@import "sections/_about";
+@import "sections/_single_service";
+@import "sections/_single_project";
+@import "sections/_single_news";
+@import "sections/_single_team";
+@import "sections/_case_study";
+@import "sections/_Divider";
+@import "_utility";

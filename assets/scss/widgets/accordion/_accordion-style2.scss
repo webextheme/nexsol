@@ -1,0 +1,72 @@
+/*===== Start Accordion Style2 =====*/
+.faq-block-style2 {
+  .accordion {
+    .accordion-item {
+      width: 100%;
+      border: none;
+      background: none;
+      margin-bottom: 20px;
+      &:last-child {
+        margin-bottom: 0 !important;
+      }
+      &.active {
+        .accordion-header {
+          .title {
+            border-bottom: none;
+            border-radius: 10px 10px 0 0;
+          }
+          span {
+            &.active-icon {
+              display: block;
+            }
+            &.inactive-icon {
+              display: none;
+            }
+          }
+        }
+      }
+      .accordion-header {
+        position: relative;
+        .title {
+          color: var(--heading-font-color);
+          cursor: pointer;
+          position: relative;
+          margin: 0;
+          padding: 15px 60px 15px 30px;
+          border: 1px solid #eee;
+          border-radius: 10px;
+        }
+        span {
+          position: absolute;
+          right: 0;
+          top: 50%;
+          font-size: 16px;
+          height: 44px;
+          width: 44px;
+          line-height: 44px;
+          border-radius: 5px;
+          color: var(--heading-font-color);
+          text-align: center;
+          @include transform(translateY(-22px));
+          &.active-icon {
+            display: none;
+          }
+        }
+      }
+      .accordion-body {
+        border: 1px solid #eee;
+        padding: 20px 30px;
+        border-radius: 0 0 10px 10px;
+        display: none;
+        p {
+          margin: 0px;
+        }
+      }
+      &:nth-child(1) {
+        .accordion-body {
+          display: block;
+        }
+      }
+    }
+  }
+}

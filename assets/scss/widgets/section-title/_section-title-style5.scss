@@ -1,0 +1,39 @@
+/*----------- [Style 05] -----------*/
+.section_title_style_5 {
+  position: relative;
+  .subtitle {
+    color: var(--webex-primary-color);
+    position: relative;
+    z-index: 1;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 2px 25px 2px 30px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    font-family: var(--body-font);
+    &:before {
+      position: absolute;
+      top: 0px;
+      left: 0;
+      content: "";
+      height: 22px;
+      width: 22px;
+      background: url(../images/objects/section-title-icon.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+  .title {
+    position: relative;
+    z-index: 1;
+    font-size: 48px;
+    line-height: 1.2;
+    @media screen and (max-width: 425px) {
+      font-size: 32px;
+      line-height: 1.3;
+    }
+  }
+}

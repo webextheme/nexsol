@@ -1,0 +1,36 @@
+//for Home3 Testmonial style1
+.testi-01-nav1 .owl-carousel .owl-nav button.owl-prev,
+.testi-01-nav1 .owl-carousel .owl-nav button.owl-next {
+  visibility: visible;
+  opacity: 1;
+  top: auto;
+  bottom: -25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid transparent;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+.testi-01-nav1 .owl-carousel .owl-nav button.owl-next {
+  right: 0;
+}
+.testi-01-nav1 .owl-carousel .owl-nav button.owl-prev {
+  left: auto;
+  right: 60px;
+}
+.testi-01-nav1 .owl-carousel .owl-nav button i,
+.testi-01-nav1 .owl-carousel .owl-nav button i {
+  color: var(--webex-primary-color);
+}
+.testi-01-nav1 .owl-carousel .owl-nav button:hover,
+.testi-01-nav1 .owl-carousel .owl-nav button:hover {
+  background: var(--webex-primary-color);
+  border: 1px solid transparent;
+}
+.testi-01-nav1 .owl-carousel .owl-nav button:hover i,
+.testi-01-nav1 .owl-carousel .owl-nav button:hover i {
+  color: #fff;
+}

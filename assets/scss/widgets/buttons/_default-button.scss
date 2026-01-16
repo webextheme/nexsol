@@ -1,0 +1,163 @@
+/*===== Start Default Button =====*/
+.nexsol_btn_block {
+  display: flex;
+  border-radius: 50px;
+}
+.cs-btn-one {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  background: var(--webex-primary-color);
+  color: var(--text-webex-primary-color);
+  font-size: 17px;
+  line-height: 26px;
+  padding: 12px 48px;
+  font-family: var(--heading-font);
+  font-weight: 400;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  &:hover {
+    background: rgba(var(--webex-primary-color-rgb), 0.8);
+    color: var(--text-webex-primary-color);
+    @include transition(all 300ms ease);
+  }
+  &.has-icon {
+    i {
+      font-size: 20px;
+      vertical-align: middle;
+      padding-right: 10px;
+    }
+  }
+  &.btn-sm.has-icon i {
+    font-size: 18px;
+  }
+  &.btn-circle {
+    border-radius: 60px 60px 60px 60px;
+  }
+  &.btn-square {
+    border-radius: 0;
+  }
+  &.btn-sm {
+    font-size: 14px;
+    padding: 10px 28px;
+  }
+  &.btn-md {
+    font-size: 14px;
+    padding: 18px 56px;
+  }
+  &.btn-lg {
+    font-size: 18px;
+    padding: 20px 64px;
+  }
+  &.btn-xl {
+    font-size: 18px;
+    padding: 24px 56px;
+  }
+  &.btn-border {
+    border: 2px solid var(--webex-primary-color);
+    background: transparent;
+    color: var(--webex-primary-color);
+  }
+  &.btn-block {
+    width: 100%;
+  }
+  &.btn-light {
+    background: var(--bg-white);
+    color: var(--webex-primary-color);
+    border: 2px solid transparent;
+    &:hover {
+      border: 2px solid;
+    }
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  &.btn-dark {
+    background: #000;
+    color: #fff;
+    &:hover {
+      background: #000;
+    }
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  &.btn-hover-border:hover {
+    border: 1px solid var(--webex-primary-color);
+  }
+  &.btn-hover-white {
+    background: #fff;
+    color: #333;
+  }
+  &.btn-secordary-color {
+    background: var(--webex-secondary-color);
+    color: var(--text-webex-secondary-color);
+    &.hover-white:hover {
+      background: #fff;
+      color: #0c2239;
+    }
+    &:hover {
+      background: var(--webex-primary-color);
+      color: var(--text-webex-primary-color);
+    }
+  }
+
+  &.btn-webex-primary-color {
+    background: var(--webex-primary-color);
+    &.hover-white:hover {
+      background: #fff;
+      color: #0c2239;
+    }
+  }
+  &.btn-webex-primary-color:hover {
+    background: var(--webex-primary-color2);
+  }
+  &.btn-webex-primary-color2 {
+    background: var(--webex-primary-color2);
+    &.hover-white:hover {
+      background: #fff;
+      color: #0c2239;
+    }
+  }
+  &.btn-webex-primary-color2:hover {
+    background: var(--webex-primary-color);
+  }
+  &.btn-webex-primary-color3 {
+    background: var(--webex-primary-color3);
+    &.hover-white:hover {
+      background: #fff;
+      color: #0c2239;
+    }
+  }
+  &.btn-webex-primary-color3:hover {
+    background: var(--webex-primary-color);
+  }
+  &.btn-webex-primary-color4 {
+    background: var(--webex-primary-color4);
+    color: var(--text-color-black);
+    &.hover-white:hover {
+      background: #fff;
+      color: #0c2239;
+    }
+  }
+  &.btn-webex-primary-color4:hover {
+    background: var(--webex-primary-color);
+  }
+  &.btn-gradient-color {
+    background: var(--bg-gradient-color);
+    color: #fff;
+    &:hover {
+      background: var(--bg-gradient-reverse-color);
+      @include box-shadow(4px 5px 10px 0px rgba(36, 106, 215, 0.6));
+    }
+  }
+  &.btn-transparent {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  &.text-btn {
+    color: var(--webex-primary-color);
+  }
+}

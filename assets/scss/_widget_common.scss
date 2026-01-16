@@ -1,0 +1,18 @@
+/*========================================*/
+/*------------- [_widget_Common] ---------*/
+/*========================================*/
+/*Table Global Setting*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 100%;
+  line-height: 30px;
+  margin: 0 0 15px;
+  width: 100%;
+  td,
+  th {
+    border: 1px solid var(--theme-widget-border-color);
+    padding: 5px;
+    font-weight: 400;
+  }
+}

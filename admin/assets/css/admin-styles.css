@@ -1,0 +1,414 @@
+#adminmenu div.wp-menu-image img {
+  width: 18px;
+  opacity: 1;
+}
+.widgets-holder-wrap input[type="text"],
+.widgets-holder-wrap input[type="number"],
+.widgets-holder-wrap input[type="url"],
+.widgets-holder-wrap input[type="email"],
+.widgets-holder-wrap input[type="date"] {
+  position: relative;
+  border-radius: 0;
+  border: 1px solid #eee;
+  height: 27px;
+  line-height: 5px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding: 12px 8px 16px;
+}
+#wp-admin-bar-nexsol-options > a {
+  background: linear-gradient(45deg, #e3164c, #df555e) !important;
+  color: #ffffff !important;
+}
+#wp-admin-bar-nexsol-options:hover > a,
+#wp-admin-bar-nexsol-options > a:hover {
+  background: linear-gradient(-45deg, #e3164c, #df555e) !important;
+  color: #ffffff !important;
+}
+#wp-admin-bar-nexsol-options a span.ab-icon::before,
+#wp-admin-bar-nexsol-options:hover a.ab-item span.ab-icon::before {
+  color: #ffffff !important;
+}
+#adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head,
+#adminmenu .wp-menu-arrow,
+#adminmenu .wp-menu-arrow div,
+#adminmenu li.current a.menu-top,
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu {
+  background: #1d5174;
+  color: #fff;
+}
+.csf-theme-dark .csf-nav ul li a {
+  color: #bbb;
+  border-color: #232631;
+  background-color: #171a25;
+}
+.csf-theme-dark .csf-nav ul ul li a {
+  border-color: #232631;
+  background-color: #10121b;
+}
+.csf-theme-dark .csf-nav ul li .csf-active,
+.csf-theme-dark .csf-nav ul li a:hover,
+.csf-theme-dark .csf-nav ul ul li .csf-active {
+  color: #fff;
+  background-color: #064965;
+}
+.csf-theme-dark .csf-nav-background {
+  background-color: #171a25;
+}
+.csf-theme-dark .csf-header-inner {
+  background-color: #064965;
+  border-bottom: 1px solid #0b2631;
+}
+.csf-theme-dark .csf-footer {
+  color: #212638;
+  background-color: #064965;
+}
+.csf-copyright {
+  display: none;
+}
+.csf-theme-dark .csf-search input {
+  color: #fff;
+  background-color: #0c3648;
+}
+.csf-theme-dark .csf-expand-all {
+  color: #bbb;
+  background-color: #0c3648;
+}
+.ocdi__intro-text p {
+  font-weight: 400;
+}
+
+/*
+  Theme Name: Nexsol
+  Author: WebexTheme
+*/
+
+.webex-dashboard-pages {
+  font-family: inherit;
+  font-size: 16px;
+  color: dimgray;
+  max-width: 1350px;
+  width: 100%;
+  margin: 0;
+  margin-top: 30px;
+}
+
+.webex-dashboard-pages a:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.webex-dashboard-pages img {
+  max-width: 100%;
+}
+
+.webex-welcome-title h3 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0;
+  color: #02050a;
+}
+
+.webex-welcome-title h3 span {
+  display: block;
+  font-size: 15px;
+  margin-top: 5px;
+  font-weight: 500;
+}
+
+.webex-welcome-title p {
+  font-size: 16px;
+  margin: 15px 0 0;
+  font-weight: 500;
+}
+
+.webex-welcome-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 50px 35px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
+  margin-top: 40px;
+}
+
+.webex-welcome-wrapper .wrapper-left,
+.webex-welcome-wrapper .wrapper-right {
+  max-width: 50%;
+}
+
+.webex-welcome-step-title {
+  margin: 25px 0 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #02050a;
+}
+
+.webex-welcome-wrapper ul {
+  margin: 0;
+}
+
+.webex-welcome-wrapper ul li {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.webex-welcome-wrapper ul li:last-child {
+  margin-bottom: 0;
+}
+
+.webex-welcome-wrapper ul li a {
+  color: #693aed;
+}
+
+.webex-welcome-wrapper ul .step-title {
+  font-size: 16px;
+  font-weight: 600;
+  display: block;
+  margin: 0 0 10px;
+  color: #02050a;
+}
+
+.webex-activation-wrapper {
+  display: -ms-grid;
+  display: grid;
+  gap: 30px;
+  -ms-grid-columns: 1.2fr 30px 1fr;
+  grid-template-columns: 1.2fr 1fr;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.webex-activation-wrapper h4 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #02050a;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.webex-server-status-boxes .status-box {
+  background: #fff;
+  padding: 40px;
+  margin-bottom: 50px;
+}
+
+.webex-server-status-boxes .single-status {
+  display: flex;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.4;
+  padding-top: 10px;
+  margin-top: 15px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: #f6f7f9;
+}
+.webex-server-status-boxes .single-status .title {
+  width: 200px;
+}
+.webex-server-status-boxes .single-status a {
+  color: inherit;
+}
+
+.webex-server-status-boxes .single-status:first-child {
+  margin-top: 0;
+}
+
+.webex-server-status-boxes .single-status .content {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.webex-server-status-boxes h4 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 35px 0 30px;
+  color: #312f2f;
+  line-height: 1;
+  background: #e9edf7;
+  padding: 20px;
+  margin-top: 0;
+}
+
+.webex-server-status-boxes h5 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 35px 0 30px;
+  color: #312f2f;
+  line-height: 1;
+  background: #e9edf7;
+  padding: 20px;
+}
+
+.webex-server-status-boxes .note {
+  color: dimgray;
+  font-size: 14px;
+  font-weight: 400;
+  display: block;
+  margin: 8px 0 0;
+}
+
+.webex-server-status-boxes .note a {
+  font-weight: 600;
+  color: #02050a;
+}
+
+.webex-server-status-boxes .note a:hover {
+  color: #ab57ff;
+}
+
+.webex-server-status-boxes .message-info-error {
+  color: red;
+}
+
+.webex-help-boxes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr 30px 1fr 30px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.webex-help-boxes .help-box {
+  padding: 35px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.webex-help-boxes .help-box.doc-box {
+  background-color: #f6d246;
+  background-size: cover;
+  background-position: center;
+}
+
+.webex-help-boxes .help-box.support-box {
+  background-color: #b855e6;
+  background-size: cover;
+  background-position: center;
+}
+
+.webex-help-boxes .help-box img {
+  margin-bottom: 30px;
+}
+
+.webex-help-boxes .help-center-btn {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  background: #fff;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  color: #02050a;
+  text-decoration: none;
+}
+
+.webex-help-boxes .help-center-btn:hover {
+  color: #fff;
+  background-color: #02050a;
+}
+
+.webex-help-boxes .video-box {
+  position: relative;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3/5;
+  z-index: 1;
+}
+
+.webex-help-boxes .video-box::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #02050a;
+  opacity: 0.5;
+}
+
+.webex-help-boxes .video-box img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: top center;
+  object-position: top center;
+}
+
+.webex-help-boxes .video-box a {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 65px;
+  height: 65px;
+  background-color: #fff;
+  color: #02050a;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.webex-help-boxes .video-box a .dashicons {
+  width: auto;
+  height: auto;
+  font-size: 30px;
+}
+.panel-tab-title {
+  background: #064965;
+  padding: 30px;
+  margin-top: 40px;
+  margin-bottom: 0;
+  max-width: 1290px;
+  color: #fff;
+}
+.nexsol-custom-admin-icon {
+  margin-top: 2px !important;
+}
+.nexsol-custom-admin-icon:before,
+#toplevel_page_nexsol_menu_slug .wp-menu-image:before {
+  color: #b2f32c !important;
+}
+.nexsol-custom-admin-icon:before {
+  color: #b2f32c !important;
+}

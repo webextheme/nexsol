@@ -1,0 +1,113 @@
+/*========================================*/
+/*--------------- [_Skills] --------------*/
+/*========================================*/
+.skill-style1 {
+  .skill-item {
+    position: relative;
+    .skill-header {
+      position: relative;
+      margin-bottom: 5px;
+      .skill-title {
+        color: var(--heading-font-color);
+      }
+      .skill-percentage {
+        position: absolute;
+        right: 0;
+        top: 0px;
+        color: var(--body-font-color);
+        padding: 0px 8px;
+        font-size: 14px;
+        line-height: 22px;
+      }
+    }
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+    .skill-bar {
+      position: relative;
+      width: 100%;
+      .bar-inner {
+        position: relative;
+        width: 100%;
+        height: 14px;
+        background: #eae4e4;
+        .bar {
+          position: absolute;
+          left: 5px;
+          top: 3px;
+          width: 0;
+          height: 8px;
+          background: var(--webex-primary-color);
+          -webkit-transition: all 2000ms ease;
+          transition: all 2000ms ease;
+          &::before {
+            position: absolute;
+            content: "";
+            right: 0;
+            height: 8px;
+            width: 5px;
+            background: #fff;
+            top: 0;
+          }
+        }
+      }
+    }
+  }
+}
+.skills {
+  .skill-item {
+    position: relative;
+    margin-bottom: 25px;
+    .skill-header {
+      position: relative;
+      margin-bottom: 5px;
+      .skill-title {
+        color: #fff;
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+      .skill-percentage {
+        position: absolute;
+        right: 0;
+        top: 1px;
+        font-size: 15px;
+        font-weight: 600;
+        color: #fff;
+      }
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .skill-bar {
+      position: relative;
+      width: 100%;
+      .bar-inner {
+        position: relative;
+        width: 100%;
+        height: 14px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 40px;
+        .bar {
+          position: absolute;
+          left: 5px;
+          top: 3px;
+          width: 0;
+          height: 8px;
+          border-radius: 30px;
+          background: var(--webex-primary-color2);
+          -webkit-transition: all 2000ms ease;
+          transition: all 2000ms ease;
+          &::before {
+            position: absolute;
+            content: "";
+            right: 0;
+            height: 8px;
+            width: 5px;
+            background: #fff;
+            top: 0;
+          }
+        }
+      }
+    }
+  }
+}

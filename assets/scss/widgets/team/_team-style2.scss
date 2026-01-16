@@ -1,0 +1,145 @@
+/*===== Start Team Style2 =====*/
+.team-block-style_2 {
+  position: relative;
+  z-index: 1;
+  box-shadow: 0px 2px 30px rgba(5, 17, 69, 0.06);
+  border-radius: var(--default-border-radius);
+  @include transition(0.4s);
+  .team-upper-part {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    border-radius: var(--default-border-radius) var(--default-border-radius) 0 0;
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      border-radius: var(--default-border-radius) var(--default-border-radius) 0 0;
+      @include transition(all 0.6s ease-out 0s);
+      @include transform(scale(1));
+    }
+    &:after {
+      content: "";
+      background: var(--webex-secondary-color);
+      position: absolute;
+      height: 0;
+      width: 100%;
+      left: 0;
+      top: 0;
+      opacity: 0;
+      border-radius: var(--default-border-radius) var(--default-border-radius) 0 0;
+      @include transition(all 0.4s ease-out 0s);
+    }
+    &:before {
+      position: absolute;
+      content: "";
+      border: 30px solid var(--webex-primary-color);
+      height: 150px;
+      width: 150px;
+      right: -80px;
+      top: -80px;
+      z-index: 1;
+      border-radius: 50%;
+      opacity: 0.2;
+      @include transition(all 0.4s ease-out 0s);
+    }
+  }
+  .team-bottom-part {
+    background-color: var(--bg-silver);
+    padding: 25px 30px 25px 30px;
+    position: relative;
+    text-align: left;
+    border-radius: 0 0 var(--default-border-radius) var(--default-border-radius);
+    .team-social-area {
+      position: absolute;
+      top: 30px;
+      right: 5px;
+      .social-share-icon {
+        background-color: var(--webex-primary-color);
+        color: var(--text-webex-primary-color);
+        font-size: 18px;
+        font-weight: 200;
+        line-height: 40px;
+        margin: 0 auto;
+        cursor: pointer;
+        z-index: 1;
+        position: relative;
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin-right: 25px;
+        border-radius: 6px;
+        text-align: center;
+      }
+      .social-list {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        min-height: 100%;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 0;
+        padding: 0;
+        @include transition(all 0.4s ease-out 0s);
+        li {
+          display: block;
+          margin: 0;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          a {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 5px;
+            border-radius: 6px;
+            background-color: var(--bg-silver);
+            border: 1px solid var(--theme-border-color);
+            box-shadow: 0px 5px 20px rgba(5, 17, 69, 0.08);
+            i {
+              color: var(--webex-primary-color);
+              font-size: 16px;
+              margin: 0 auto;
+            }
+            &:hover {
+              background-color: var(--webex-primary-color);
+              i {
+                color: var(--text-webex-primary-color);
+              }
+            }
+          }
+        }
+      }
+      &:hover {
+        .social-list {
+          visibility: visible;
+          opacity: 1;
+          bottom: calc(100% + -15px);
+        }
+      }
+    }
+    .team-title {
+      margin: 0 0 5px;
+    }
+    .team-designation {
+      color: var(--text-categories);
+      margin-bottom: 0;
+      font-weight: 400;
+    }
+  }
+  &:hover {
+    .team-upper-part {
+      img {
+        filter: grayscale(1);
+        @include transform(scale(1.1) rotate(-2deg));
+      }
+      &:after {
+        opacity: 0.5;
+        height: 100%;
+      }
+      &:before {
+        opacity: 0.08;
+        border-width: 50px;
+      }
+    }
+  }
+}

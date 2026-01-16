@@ -1,0 +1,133 @@
+/*===== Start Project Style4 =====*/
+.project-block-style_4 {
+  padding: 30px;
+  border-radius: 25px;
+  border: 1px solid rgba(var(--webex-primary-color-rgb), 0.2);
+  &.color_style_2 {
+    .project-thumb {
+      .project-link-icon {
+        a {
+          background: linear-gradient(220deg, var(--webex-primary-color), #18191e00);
+        }
+      }
+      .project-details {
+        .project-category {
+          a {
+            background: var(--webex-primary-color);
+          }
+        }
+      }
+    }
+  }
+  .project-thumb {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    &:before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(215deg, #0000006b, transparent);
+      z-index: 1;
+      opacity: 0;
+      transition: all 300ms ease;
+    }
+    &:after {
+      background: linear-gradient(0deg, #000000c2, transparent);
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+    }
+    img {
+      width: 100%;
+      -webkit-transform: scale(1.01);
+      transform: scale(1.01);
+      transition: all 900ms ease;
+    }
+    .project-category {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      z-index: 1;
+      a {
+        padding: 5px 15px 8px 15px;
+        border-radius: 30px;
+        font-size: 13px;
+        line-height: 1;
+        background: var(--webex-primary-color);
+        color: #fff;
+        margin-right: 5px;
+      }
+    }
+    .project-link-icon {
+      a {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 30px;
+        right: 30px;
+        font-size: 36px;
+        text-align: center;
+        color: #fff;
+        visibility: hidden;
+        transform: scale(0);
+        opacity: 0;
+        z-index: 3;
+        @include transition(all 500ms ease-out 0s);
+      }
+    }
+  }
+  .project-details {
+    padding: 25px 0 0 0;
+    border-top: none;
+    position: relative;
+    overflow: hidden;
+    .project-title {
+      margin-bottom: 0;
+      a {
+        color: var(--heading-font-color);
+        &:hover {
+          color: var(--webex-primary-color);
+        }
+      }
+    }
+    .post-excerpt {
+      margin-top: 10px;
+    }
+  }
+  &:hover {
+    .project-thumb {
+      &:before {
+        opacity: 1;
+      }
+      img {
+        filter: grayscale(1);
+        @include transform(scale(1.2) rotate(3deg));
+      }
+      .project-link-icon {
+        a {
+          visibility: visible;
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+      .project-details {
+        opacity: 1;
+        bottom: 20px;
+        left: 30px;
+        .project-category {
+          a {
+            &:first-child {
+              margin-left: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

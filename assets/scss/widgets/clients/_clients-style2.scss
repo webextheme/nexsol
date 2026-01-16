@@ -1,0 +1,57 @@
+/*===== Start Client Style2 =====*/
+.client-block-items {
+  .nexsol-slider-item {
+    .client-item-style_2 {
+      .client-item-thumb {
+        display: inline-block;
+      }
+    }
+  }
+  .client-item-style_2 {
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    &:hover {
+      .client-item-item-img {
+        transform: translateY(100%);
+      }
+      .client-item-item-hover {
+        transform: translate(-50%, 0);
+        filter: grayscale(1);
+      }
+      .client-item-thumb {
+        img {
+          opacity: 1;
+        }
+      }
+    }
+    .client-item-item-img {
+      position: relative;
+      display: block;
+      width: auto;
+      margin: 0 auto;
+      transition: transform 0.4s ease;
+    }
+    .client-item-item-hover {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: auto;
+      transform: translate(-50%, -130%);
+      transition: transform 0.5s ease;
+    }
+    .client-item-thumb {
+      margin: 40px;
+      position: relative;
+      overflow: hidden;
+      vertical-align: top;
+      border-radius: 10px;
+      img {
+        height: 32px;
+        object-fit: contain;
+        opacity: 1;
+        transition: transform 0.4s ease;
+      }
+    }
+  }
+}

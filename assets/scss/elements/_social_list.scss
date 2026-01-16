@@ -1,0 +1,96 @@
+/*========================================*/
+/*----------- [_Social_List] -------------*/
+/*========================================*/
+.elementor-social-icon {
+  display: inline-flex !important;
+}
+.social-list {
+  padding-left: 0;
+  li {
+    display: inline;
+    margin-right: 5px;
+    a {
+      background: var(--webex-primary-color);
+      height: 42px;
+      width: 42px;
+      color: var(--text-webex-primary-color);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1;
+      border-radius: 50%;
+      font-size: 16px;
+      &:hover {
+        background: var(--text-webex-primary-color);
+      }
+    }
+  }
+  &.list-webex-primary-color {
+    li {
+      a {
+        background: var(--webex-primary-color);
+        color: var(--text-webex-primary-color);
+        &:hover {
+          background: var(--webex-primary-color);
+          color: var(--text-webex-primary-color);
+        }
+      }
+    }
+  }
+  &.list-flat {
+    li {
+      a {
+        border-radius: 0;
+      }
+    }
+  }
+  &.list-lg {
+    li {
+      a {
+        height: 48px;
+        width: 48px;
+        font-size: 18px;
+        line-height: 48px;
+      }
+    }
+  }
+  &.list-sm {
+    li {
+      margin-right: 10px;
+      height: 34px;
+      width: 34px;
+      font-size: 14px;
+      line-height: 34px;
+      a {
+        height: 34px;
+        width: 34px;
+        font-size: 14px;
+        line-height: 34px;
+      }
+    }
+  }
+}
+.widget-social-list {
+  display: flex;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  li {
+    list-style: none;
+    a {
+      background: var(--webex-primary-color);
+      height: 42px;
+      width: 42px;
+      color: var(--text-webex-primary-color);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1;
+      border-radius: 6px;
+      font-size: 16px;
+      &:hover {
+        background: var(--webex-primary-color);
+      }
+    }
+  }
+}

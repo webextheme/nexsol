@@ -1,0 +1,13 @@
+.rotate-text {
+  position: absolute;
+  transform: rotate(90deg);
+  top: 168px;
+  left: -154px;
+  background: var(--webex-primary-color);
+  color: #fff;
+  padding: 12px 76px;
+  font-size: 22px;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}

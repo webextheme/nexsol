@@ -1,0 +1,83 @@
+/*===== Start Button Common =====*/
+.text-link-btn {
+  position: relative;
+  color: var(--blue);
+  &:after {
+    content: "\eb34";
+    font-family: "webexicon" !important;
+    vertical-align: middle;
+    margin-left: 8px;
+    font-size: 14px;
+    display: inline-block;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: var(--blue);
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+    transform-origin: 100% 50%;
+    @include transform(scale3d(0, 1, 1));
+    @include transition(transform 0.3s cubic-bezier(0.7, 0, 0.2, 1));
+  }
+  &:hover {
+    color: var(--webex-secondary-color);
+    &::before {
+      background: var(--webex-secondary-color);
+      transform-origin: 0 50%;
+      @include transform(scale3d(1, 1, 1));
+      transition-timing-function: cubic-bezier(0.4, 1, 0.8, 1);
+    }
+  }
+  &.webex-primary-color {
+    color: var(--webex-primary-color);
+    &::before {
+      background: var(--webex-primary-color);
+    }
+    &:hover {
+      color: var(--webex-primary-color);
+      &::before {
+        background: var(--webex-primary-color);
+      }
+    }
+  }
+  &.webex-primary-color2 {
+    color: var(--webex-primary-color2);
+    &::before {
+      background: var(--webex-primary-color2);
+    }
+    &:hover {
+      color: var(--webex-primary-color2);
+      &::before {
+        background: var(--webex-primary-color2);
+      }
+    }
+  }
+  &.webex-primary-color3 {
+    color: var(--webex-primary-color3);
+    &::before {
+      background: var(--webex-primary-color3);
+    }
+    &:hover {
+      color: var(--webex-primary-color3);
+      &::before {
+        background: var(--webex-primary-color3);
+      }
+    }
+  }
+  &.webex-primary-color4 {
+    color: var(--webex-primary-color4);
+    &::before {
+      background: var(--webex-primary-color4);
+    }
+    &:hover {
+      color: var(--webex-primary-color4);
+      &::before {
+        background: var(--webex-primary-color4);
+      }
+    }
+  }
+}

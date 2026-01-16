@@ -1,0 +1,48 @@
+/*===== Start Gallery Style1 =====*/
+.gallery-block-style_1 {
+  &:hover {
+    .gallery-card {
+      &:after {
+        transform: scaleY(1);
+      }
+    }
+  }
+  .gallery-card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    a {
+      img {
+        border-radius: 10px;
+      }
+    }
+    .view_icon {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      background: var(--webex-primary-color);
+      color: var(--text-webex-primary-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 45px;
+      width: 45px;
+      line-height: 1;
+      border-radius: 50%;
+      z-index: 1;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: linear-gradient(360deg, var(--webex-primary-color2), transparent);
+      @include transition(all 300ms ease-out 0s);
+      transform: scaleY(0);
+      transform-origin: bottom;
+      opacity: 0.9;
+    }
+  }
+}

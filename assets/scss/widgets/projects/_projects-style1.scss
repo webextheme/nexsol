@@ -1,0 +1,134 @@
+/*===== Start Project Style1 =====*/
+.project-block-style_1 {
+  position: relative;
+  .project-thumb {
+    position: relative;
+    overflow: hidden;
+    position: relative;
+    -webkit-mask-image: url("../../assets/images/mask/h1__project-mask1.svg");
+    mask: url("../../assets/images/mask/h1__project-mask1.svg");
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: top right;
+    mask-position: top right;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    img {
+      -webkit-transform: scale(1.01);
+      transform: scale(1.01);
+      transition: all 900ms ease;
+      height: 435px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .project-details-wrap {
+    position: relative;
+    .project-details {
+      padding: 20px 0 0 0;
+      border-top: none;
+      position: relative;
+      overflow: hidden;
+      @include transition(all 200ms ease-out 0s);
+      .project-title {
+        margin-bottom: 0;
+        a {
+          color: var(--heading-font-color);
+          &:hover {
+            color: var(--webex-primary-color);
+          }
+        }
+      }
+      .project-category {
+        margin-bottom: 5px;
+        a {
+          font-size: 16px;
+          line-height: 30px;
+        }
+      }
+    }
+    .project-details-hover {
+      clip-path: polygon(0% 1.25%, 38.636% 8.125%, 81.818% 17.813%, 100% 0%, 100% 100%, 0% 100%, 0% 1.25%);
+      background: var(--webex-primary-color);
+      padding: 35px 60px 30px 30px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      z-index: 1;
+      @include transition(all 400ms ease-out 0s);
+      @media screen and (max-width: 425px) {
+        width: 100%;
+      }
+      .project-title {
+        margin-bottom: 0;
+        a {
+          color: var(--text-webex-primary-color);
+          &:hover {
+            color: var(--text-webex-primary-color);
+          }
+        }
+      }
+      .project-category {
+        margin-bottom: 5px;
+        a {
+          font-size: 16px;
+          line-height: 30px;
+          color: var(--text-webex-primary-color);
+        }
+      }
+    }
+  }
+  .project-link-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    a {
+      background: var(--webex-primary-color2);
+      display: inline-flex;
+      height: 70px;
+      width: 70px;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-webex-primary-color2);
+      font-size: 24px;
+      &:hover {
+        background: var(--webex-primary-color);
+        color: var(--text-webex-primary-color);
+      }
+    }
+  }
+  &:hover {
+    .project-thumb {
+      img {
+        filter: grayscale(1);
+        @include transform(scale(1.2) rotate(3deg));
+      }
+      .project-details {
+        opacity: 1;
+        bottom: 20px;
+        left: 30px;
+        .project-category {
+          a {
+            &:first-child {
+              margin-left: 40px;
+            }
+          }
+        }
+      }
+    }
+    .project-details {
+      opacity: 0;
+    }
+    .project-details-hover {
+      top: -46px;
+      opacity: 1;
+    }
+    .project-link-icon {
+      a {
+        background: var(--webex-primary-color);
+        color: var(--text-webex-primary-color);
+      }
+    }
+  }
+}

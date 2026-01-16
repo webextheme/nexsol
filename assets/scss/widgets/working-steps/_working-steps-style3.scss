@@ -1,0 +1,72 @@
+/*===== Start Working Steps Style3 =====*/
+.working-steps-block-style_3 {
+  position: relative;
+  @include transition(all 300ms ease);
+  .working-steps-inner {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 20px;
+    background: var(--bg-silver);
+    z-index: 1;
+    border-radius: 20px;
+    @include transition(all 300ms ease);
+    position: relative;
+    overflow: hidden;
+    .working-thumb-part {
+      position: relative;
+      overflow: hidden;
+      .working-thumb {
+        position: relative;
+        overflow: hidden;
+        border-radius: 20px;
+        &:after {
+          content: "";
+          background: linear-gradient(0deg, black, transparent);
+          height: 100%;
+          width: 100%;
+          left: 0;
+          bottom: 0;
+          position: absolute;
+          z-index: 0;
+          border-radius: 20px;
+        }
+        img {
+          border-radius: 15px;
+        }
+      }
+      .counting {
+        font-size: 24px;
+        color: #fff;
+        @include transition(all 300ms ease);
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-family: var(--heading-font);
+        display: flex;
+        align-items: center;
+        z-index: 1;
+        span {
+          font-size: 56px;
+          margin-left: 15px;
+          line-height: 1;
+        }
+      }
+      .working-title {
+        position: absolute;
+        bottom: 15px;
+        left: 20px;
+        color: #fff;
+        margin-bottom: 0;
+        z-index: 1;
+        a {
+          color: #fff;
+        }
+      }
+    }
+    .working-description {
+      margin-top: 30px;
+      margin-bottom: 12px;
+    }
+  }
+}

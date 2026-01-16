@@ -1,0 +1,109 @@
+/*===== Start Working Steps Style4 =====*/
+.working-steps-block-style_4 {
+  position: relative;
+  @include transition(all 300ms ease);
+  &:hover {
+    .working-steps-outer {
+      .working-steps-inner {
+        .working-icon {
+          color: var(--webex-primary-color);
+          opacity: 1;
+        }
+      }
+    }
+    .counting {
+      background: var(--webex-primary-color);
+      color: var(--text-webex-primary-color);
+    }
+  }
+  .counting {
+    position: absolute;
+    font-size: 24px;
+    color: var(--heading-font-color);
+    font-family: var(--heading-font);
+    background: var(--bg-silver);
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 70px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 15px 0 0 0;
+    @include transition(all 300ms ease);
+    @media screen and (max-width: 991px) {
+      top: 5px;
+      left: 5px;
+      background: #fff;
+    }
+  }
+  .working-steps-outer {
+    position: relative;
+    &:after {
+      content: "";
+      top: -1px;
+      bottom: -1px;
+      left: -1px;
+      right: -1px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.1);
+      position: absolute;
+      -webkit-mask: url("../../assets/images/mask/h3_process_item-mask.svg");
+      mask: url("../../assets/images/mask/h3_process_item-mask.svg");
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-position: top left;
+      mask-position: top left;
+      mask-size: cover;
+      object-fit: cover;
+      z-index: -1;
+      @media screen and (max-width: 991px) {
+        mask: none;
+        mask-image: none;
+      }
+    }
+    .working-steps-inner {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      padding: 30px 30px 30px 120px;
+      background: var(--bg-silver);
+      z-index: 1;
+      border-radius: 15px;
+      @include transition(all 300ms ease);
+      @media screen and (max-width: 991px) {
+        mask: none;
+        mask-image: none;
+      }
+      position: relative;
+      overflow: hidden;
+      position: relative;
+      -webkit-mask: url("../../assets/images/mask/h3_process_item-mask.svg");
+      mask: url("../../assets/images/mask/h3_process_item-mask.svg");
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-position: top left;
+      mask-position: top left;
+      -webkit-mask-size: cover;
+      mask-size: cover;
+      .working-title {
+        margin-bottom: 15px;
+      }
+      .working-description {
+        margin-bottom: 0;
+      }
+      .working-icon {
+        position: absolute;
+        right: 30px;
+        top: 65px;
+        font-size: 72px;
+        line-height: 0;
+        color: var(--heading-font-color);
+        opacity: 0.1;
+        @include transition(all 300ms ease);
+      }
+    }
+  }
+}

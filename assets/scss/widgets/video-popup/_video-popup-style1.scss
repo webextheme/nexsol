@@ -1,0 +1,41 @@
+.video-block {
+  display: inline-block;
+  .video-link {
+    text-align: center;
+    a {
+      display: inline-block;
+      i {
+        display: inline-block;
+        position: relative;
+        height: 125px;
+        width: 125px;
+        line-height: 125px;
+        background: #fff;
+        border-radius: 50%;
+        z-index: 3;
+        border: 1px solid #ffffff1a;
+        &::before {
+          font-size: 24px;
+          color: var(--webex-primary-color);
+          border-radius: 50%;
+          z-index: 3;
+          position: relative;
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          display: block;
+          width: 100%;
+          height: 100%;
+          background-color: #fff;
+          border-radius: 50%;
+          animation: pulse-border-2 1.5s ease-out infinite;
+          z-index: 0;
+          border: 1px solid var(--webex-primary-color);
+        }
+      }
+    }
+  }
+}

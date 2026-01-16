@@ -1,0 +1,67 @@
+/*========================================*/
+/*------------- [_Title_Lines] -----------*/
+/*========================================*/
+.side-line-left {
+  position: relative;
+  padding-left: 70px;
+  margin-bottom: 10px;
+  display: inline;
+  &:after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 50px;
+    background: var(--webex-primary-color);
+    left: 10px;
+    bottom: 12px;
+  }
+  &:before {
+    content: "";
+    height: 2px;
+    width: 50px;
+    position: absolute;
+    left: 0;
+    bottom: 8px;
+    background: var(--webex-primary-color);
+  }
+  &.white {
+    &:after {
+      background: #fff;
+      box-shadow: 0 0 0px 8px rgba(255, 255, 255, 0.2);
+    }
+  }
+}
+.sub-title-line-bottom {
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  z-index: 1;
+  color: var(--webex-primary-color);
+  font-weight: 400;
+  margin-bottom: 10px;
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: -5px;
+    right: -5px;
+    height: 6px;
+    background-color: #efe8de;
+    z-index: -1;
+  }
+}
+
+.nexsol-sidebar-widget-title {
+  position: relative;
+  padding-left: 25px;
+  .elementor-heading-title:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    background: #b98e75;
+    left: 0;
+    bottom: 0;
+  }
+}

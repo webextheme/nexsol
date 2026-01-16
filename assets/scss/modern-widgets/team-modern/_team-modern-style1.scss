@@ -1,0 +1,123 @@
+/*===== Start Modern Team Style1 =====*/
+#modern-team-wrapper-style_1 {
+  display: flex;
+  overflow: hidden;
+  gap: 20px;
+  height: 413px;
+  @media screen and (max-width: 991px) {
+    flex-direction: column;
+    height: 945px;
+  }
+  .modern-team-block-style1 {
+    &.active {
+      background: transparent;
+      flex: 4;
+      writing-mode: horizontal-tb;
+      border: 0;
+      @media screen and (max-width: 991px) {
+        width: 100%;
+        writing-mode: horizontal-tb;
+        flex: 8 !important;
+      }
+      .modern-team-block-default {
+        display: none;
+      }
+      .modern-team-block-expanded {
+        display: flex;
+        height: 410px;
+        @media screen and (max-width: 991px) {
+          align-items: center;
+        }
+
+        .modern-team-content {
+          width: 100%;
+          @media screen and (max-width: 768px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 10px;
+          }
+        }
+      }
+    }
+    transition: all 0.5s ease;
+    overflow: hidden;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    writing-mode: vertical-rl;
+    background: var(--bg-white);
+    border: 1px solid #eee;
+    border-radius: 8px;
+    [data-layout-mood="dark"] & {
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    @media screen and (max-width: 991px) {
+      width: 100%;
+      writing-mode: horizontal-tb;
+      flex: 2 !important;
+    }
+    .modern-team-block-default {
+      .modern-team-bg {
+        position: relative;
+        transform: rotate(180deg);
+        z-index: 1;
+        @media screen and (max-width: 991px) {
+          padding: 30px 0;
+          transform: unset;
+        }
+        .modern-designation-name {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .modern-team-block-expanded {
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      background: var(--bg-white);
+      padding: 30px;
+      border: 1px solid var(--theme-border-color);
+      border-radius: 8px;
+      .modern-team-thumb {
+        overflow: hidden;
+        border-radius: 10px;
+      }
+      .modern-team-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 0;
+        margin-top: 25px;
+        transition: all 0.5s ease;
+        .team-social {
+          .social-list {
+            margin-bottom: 0;
+            li {
+              a {
+                background: var(--bg-white);
+                color: var(--heading-font-color);
+                border: 1px solid var(--theme-border-color);
+                &:hover {
+                  background: var(--webex-primary-color);
+                  color: var(--text-webex-primary-color);
+                }
+              }
+            }
+          }
+        }
+        .modern-designation-name {
+          margin-bottom: 3px;
+        }
+        .modern-team-designation {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

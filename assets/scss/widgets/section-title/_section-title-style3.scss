@@ -1,0 +1,27 @@
+/*----------- [Style 03] -----------*/
+.section_title_style_3 {
+  position: relative;
+  .subtitle {
+    color: var(--webex-primary-color3);
+    position: relative;
+    z-index: 1;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    @media screen and (max-width: 425px) {
+      margin-bottom: 15px;
+    }
+  }
+  .title {
+    position: relative;
+    z-index: 1;
+    font-size: 48px;
+    line-height: 1.2;
+    @media screen and (max-width: 425px) {
+      font-size: 32px;
+      line-height: 1.3;
+    }
+  }
+}

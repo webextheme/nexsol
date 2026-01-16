@@ -1,0 +1,11 @@
+header {
+  .custom_elementor_header {
+    &.header_transparent {
+      z-index: 11;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+}

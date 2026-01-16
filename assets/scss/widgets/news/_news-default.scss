@@ -1,0 +1,102 @@
+.default__news-with-sidebar {
+  padding-top: 150px;
+  padding-bottom: 120px;
+  @media screen and (max-width: 1200px) {
+    padding-top: 120px;
+  }
+  .default__news-single {
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+    border: var(--default-news-border);
+    padding: 45px;
+    .default__news-post-thumbnail-area {
+      position: relative;
+      display: block;
+      img {
+        max-width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+    .default__news-content-area {
+      position: relative;
+      display: block;
+      .default__news-post-meta {
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        flex-wrap: wrap;
+        position: relative;
+        margin-left: -5px;
+        margin-right: -5px;
+        padding-left: 0;
+        font-size: 16px;
+        li {
+          position: relative;
+          display: block;
+          line-height: 26px;
+          padding-left: 5px;
+          padding-right: 10px;
+          color: var(--theme-text-gray);
+          a {
+            color: var(--theme-text-gray);
+            @include transition(all 500ms ease);
+            i {
+              color: var(--webex-primary-color);
+              vertical-align: middle;
+              margin-right: 5px;
+            }
+            &:hover {
+              color: var(--webex-primary-color);
+            }
+          }
+          i {
+            color: var(--webex-primary-color);
+            vertical-align: middle;
+            margin-right: 5px;
+          }
+        }
+      }
+      .default__news-post-title {
+        font-size: 26px;
+        margin-top: 10px;
+        a {
+          @include transition(all 500ms ease);
+          word-break: break-word;
+          &:hover {
+            color: var(--webex-primary-color);
+          }
+        }
+      }
+      .default__news-post-excerpt {
+        .news-excerpt__text {
+          margin-bottom: 0;
+          margin-top: 20px;
+        }
+      }
+      .default__news-readmore-btn {
+        a {
+          &.readmore-btn {
+            clear: both;
+            background: var(--webex-primary-color);
+            color: var(--text-webex-primary-color);
+            border: 1px solid transparent;
+            border-radius: 0;
+            padding: 12px 25px;
+            line-height: 1.5em;
+            font-size: 1em;
+            text-transform: none;
+            box-shadow: none;
+            display: inline-block;
+            margin-top: 35px;
+            @include transition(all 0.2s linear);
+            &:hover {
+              background-color: var(--webex-primary-color3);
+              color: var(--text-webex-primary-color3);
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,139 @@
+//======= Variables ========//
+$webex-primary-color: #ff6701;
+$webex-primary-color2: #121110;
+$webex-primary-color3: #d5ef87;
+$webex-primary-color4: #0a2e38;
+$webex-secondary-color: #141125;
+$webex-secondary-color2: #2a283c;
+$webex-secondary-color3: #152929;
+$webex-bg-white: #fff;
+$webex-bg-dark: #000;
+@function hexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+:root {
+  --webex-primary-color: #ff6701;
+  --text-webex-primary-color: #fff;
+  --webex-primary-color-rgb: #{hexToRGB($webex-primary-color)};
+  --webex-primary-color2: #121110;
+  --text-webex-primary-color2: #fff;
+  --webex-primary-color2-rgb: #{hexToRGB($webex-primary-color2)};
+  --webex-primary-color3: #d5ef87;
+  --text-webex-primary-color3: #000;
+  --webex-primary-color3-rgb: #{hexToRGB($webex-primary-color3)};
+  --webex-primary-color4: #0a2e38;
+  --text-webex-primary-color4: #fff;
+  --webex-primary-color4-rgb: #{hexToRGB($webex-primary-color4)};
+  --webex-secondary-color: #141125;
+  --text-webex-secondary-color: #fff;
+  --webex-secondary-color-rgb: #{hexToRGB($webex-secondary-color)};
+  --webex-secondary-color2: #2a283c;
+  --webex-secondary-color2-rgb: #{hexToRGB($webex-secondary-color2)};
+  --webex-secondary-color3: #152929;
+  --webex-secondary-color3-rgb: #{hexToRGB($webex-secondary-color3)};
+  --bg-white-rgb: #{hexToRGB($webex-bg-white)};
+  --bg-dark-rgb: #{hexToRGB($webex-bg-dark)};
+
+  --heading-font: "Bebas Neue", sans-serif;
+  --body-font: "Work Sans", sans-serif;
+  --secondary-font: "Lora", sans-serif;
+
+  --h1-h2-font-weight: 400;
+  --h3-h4-font-weight: 400;
+  --h5-h6-font-weight: 400;
+  --heading-font-color: #000000;
+  //Section Sub Title Variables
+  --section-subtitle-font-family: var(--heading-font);
+  --section-subtitle-color: var(--webex-primary-color);
+  --section-subtitle-font-size: 18px;
+  --section-subtitle-font-weight: 400;
+  --section-subtitle-line-height: 24px;
+  --section-subtitle-letter-spacing: 0.02rem;
+  //Sectio Title Variables
+  --section-title-font-family: var(--heading-font);
+  --section-title-font-size: 56px;
+  --section-title-font-weight: 400;
+  --section-title-line-height: 1.2;
+  --section-title-letter-spacing: 1.5px;
+
+  --body-color: #ffffff;
+  --body-font-color: #848484;
+  --body-font-dark-color: #bdbcbf;
+  --body-font-size: 1.063rem;
+  --body-font-weight: 400;
+  --body-font-line-height: 1.8rem;
+  --body-font-letter-spacing: -0.35px;
+
+  --text-white: #ffffff;
+  --text-dark: #000;
+  --text-gray: #c0c0c0;
+  --text-blue: #447bde;
+  --text-light-gray: #a7a8b4;
+  --text-silver: #f5f3f1;
+  --text-gray-light: #cccccc;
+  --text-dark-light: #808093;
+
+  --bg-white: #ffffff;
+  --bg-dark: #121414;
+  --bg-light-pink: #faf3f3;
+  --bg-silver: #f2f5f6;
+  --bg-silver-light: #eff1f9;
+  --bg-silver-light2: #f0f1f7;
+  --bg-silver-deep: #ecdaee;
+  --bg-gray: #f7f7f7;
+  --bg-dark-color: #0b0c26;
+  --bg-blue-color: #571bcd;
+
+  --gradient-color1: #c9f31d;
+  --gradient-color2: #4cca8f;
+  --gradient-color3: #fa2f5e;
+  --gradient-color4: #8636c5;
+
+  --bg-gradient-color: linear-gradient(30deg, var(--gradient-color2) 0%, var(--gradient-color1) 15%, var(--gradient-color1) 20%, var(--gradient-color2) 95%) 80%/120% 120%;
+  --bg-gradient-color2: linear-gradient(30deg, var(--gradient-color3) 0%, var(--gradient-color4) 15%, var(--gradient-color4) 20%, var(--gradient-color2) 95%) 80%/120% 120%;
+  --bg-gradient-hover-color: linear-gradient(30deg, var(--gradient-color2) 0%, var(--gradient-color3) 5%, var(--gradient-color1) 15%, var(--gradient-color2) 95%) 80%/120% 1%;
+  --bg-gradient-hover-color2: linear-gradient(30deg, var(--gradient-color3) 0%, var(--gradient-color4) 5%, var(--gradient-color4) 15%, var(--gradient-color2) 95%) 80%/120% 1%;
+  --text-gradient-color: linear-gradient(90deg, var(--gradient-color4) 0%, var(--gradient-color1) 50%, var(--gradient-color2) 100%);
+  --text-gradient-color2: linear-gradient(5deg, var(--gradient-color3) 10%, var(--gradient-color4) 10%, var(--gradient-color4) 20%, var(--gradient-color3) 70%) 50%/120% 120%;
+  --icon-gradient-color: linear-gradient(60deg, var(--gradient-color2) 20%, var(--gradient-color3) 25%, var(--gradient-color1) 70%, var(--gradient-color2) 100%) 100%/120% 120%;
+  --icon-gradient-color2: linear-gradient(60deg, var(--gradient-color2) 20%, var(--gradient-color3) 25%, var(--webex-primary-color3) 70%, var(--gradient-color2) 100%) 100%/120% 120%;
+
+  --header-default-bg-color: var(--bg-white);
+  --header-default-nav-color: var(--heading-font-color);
+  --header-default-nav-hover-color: var(--webex-primary-color);
+  --header-default-nav-font-family: var(--heading-font);
+  --header-default-nav-font-size: 17px;
+  --header-default-nav-font-weight: 400;
+  --header-default-nav-letter-spacing: 0.1px;
+
+  --header-default-nav-child-color: var(--heading-font-color);
+  --header-default-nav-child-hover-color: var(--text-webex-primary-color);
+  --header-default-nav-child-font-family: var(--body-font);
+  --header-default-nav-child-font-size: 15px;
+  --header-default-nav-child-font-weight: 500;
+  --header-default-nav-child-letter-spacing: -0.2px;
+
+  --box-shadow: 6px 6px 25px 0px rgba(0, 0, 0, 0.08);
+  --text-categories: #8e8e8e;
+  --footer-text-color: #929598;
+
+  --widget-content-bg-text-color: var(--heading-font-color);
+  --theme-text-gray: #acafb2;
+
+  --default-border-radius: 10px;
+  --theme-border-radius: 25px;
+  --default-news-bg-color: var(--widget-content-bg-color);
+  --default-news-border: 1px solid #e5e7de;
+  --default-header-border-color: #e5e7de;
+
+  --widget-content-bg-color: #f2f5f6;
+  --theme-border-color: #dedfde;
+  --theme-primary-border-color: rgba(var(--bg-dark-rgb), 0.1);
+  --theme-widget-border-color: #dedfde;
+  --form-placeholder-color: #777;
+
+  --link-hover-color: var(--webex-primary-color);
+  --link-color: var(--body-font-color);
+  --default-header-sticky-bg-color: #0c0c1c;
+  --custom-header-sticky-bg-color: #0c0c1c;
+}

@@ -1,0 +1,41 @@
+/*===== Start Feature Box Style4 =====*/
+.feature-box-block-style_4 {
+  position: relative;
+  @include transition(all 300ms ease);
+  margin-top: 40px;
+  .feature-box-inner {
+    text-align: center;
+    .feature-box-thumb {
+      border-radius: 10px;
+      img {
+        border-radius: 10px;
+      }
+      .counting {
+        position: absolute;
+        right: 40px;
+        top: -40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80px;
+        width: 80px;
+        line-height: 1;
+        background: var(--webex-primary-color);
+        color: var(--text-webex-primary-color);
+        border-radius: 50%;
+        font-size: 24px;
+        line-height: 1.4;
+        font-family: var(--heading-font);
+        font-weight: 600;
+      }
+    }
+    .feature-box-content {
+      .feature-box-title {
+        margin-top: 25px;
+      }
+    }
+  }
+}
+.feature-box-block-wrapper .owl-item:nth-child(odd) .feature-box-block-style_4 {
+  margin: 80px 60px 0 60px;
+}

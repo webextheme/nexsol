@@ -1,0 +1,39 @@
+/*===== Start Show More Style1 =====*/
+.show-more-block-style1 {
+  .show-more-inner {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    @media screen and (max-width: 425px) {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+    }
+    .show-more-icon {
+      line-height: 1;
+      margin-right: 10px;
+      color: var(--webex-primary-color);
+      @media screen and (max-width: 425px) {
+        margin-right: 0;
+        font-size: 28px;
+      }
+    }
+    .title {
+      margin-bottom: 0;
+      color: var(--heading-font-color);
+      flex-shrink: 0;
+      .btn-link {
+        text-decoration: underline;
+        color: var(--webex-primary-color);
+        font-weight: 600;
+      }
+    }
+    &:hover {
+      .title {
+        position: relative;
+        z-index: 1;
+      }
+    }
+  }
+}

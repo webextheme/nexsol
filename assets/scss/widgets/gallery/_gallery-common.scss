@@ -1,0 +1,66 @@
+.gallery-block-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr 30px 1fr 30px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 30px;
+  grid-column-gap: 30px;
+}
+.gallery-block-wrapper.nexsol-slider-wrapper {
+  display: block;
+}
+.gallery__details {
+  padding-top: 140px;
+  padding-bottom: 120px;
+  @media screen and (max-width: 1200px) {
+    padding-top: 110px;
+  }
+}
+.gallery-section {
+  .gallery-filter {
+    ul {
+      li {
+        display: inline-block;
+        border: 1px solid #d6d6df;
+        padding: 8px 25px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        color: #373959;
+        font-weight: 500;
+        border-radius: 25px;
+        margin-right: 5px;
+        &:hover,
+        &.active {
+          background: var(--webex-primary-color);
+          color: #fff;
+          @include transition(all 0.2s ease-in-out);
+        }
+      }
+    }
+  }
+}
+
+//Owl Carousel Styles
+//====================
+.owl-carousel.gallery-nav .owl-nav button.owl-prev,
+.owl-carousel.gallery-nav .owl-nav button.owl-next {
+  opacity: 1;
+  visibility: visible;
+  top: -21%;
+  right: 19.5%;
+  height: 64px;
+  width: 64px;
+  line-height: 64px;
+}
+.owl-carousel.gallery-nav .owl-nav button.owl-prev {
+  right: 23.5%;
+  left: auto;
+}
+.owl-carousel.gallery-nav .owl-nav button.owl-prev:hover,
+.owl-carousel.gallery-nav .owl-nav button.owl-next:hover {
+  background: #fff;
+}
+.owl-carousel.gallery-nav .owl-nav button.owl-prev:hover i,
+.owl-carousel.gallery-nav .owl-nav button.owl-next:hover i {
+  color: var(--webex-primary-color);
+}

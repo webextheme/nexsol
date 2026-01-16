@@ -1,0 +1,69 @@
+//Layout Container Width
+body {
+  &.custom-e-con-container-1140 {
+    .e-con {
+      --container-max-width: 1140px;
+    }
+    .container {
+      max-width: 1140px;
+      &.container-elementor {
+        max-width: 100%;
+      }
+    }
+  }
+  &.custom-e-con-container-1200 {
+    .e-con {
+      --container-max-width: 1200px;
+    }
+    .container {
+      max-width: 1200px;
+      &.container-elementor {
+        max-width: 100%;
+      }
+    }
+  }
+  &.custom-e-con-container-1260 {
+    .e-con {
+      --container-max-width: 1260px;
+    }
+    .container {
+      max-width: 1260px;
+      &.container-elementor {
+        max-width: 100%;
+      }
+    }
+  }
+  &.custom-e-con-container-1320 {
+    .e-con {
+      --container-max-width: 1320px;
+    }
+    .container {
+      max-width: 1320px;
+      &.container-elementor {
+        max-width: 100%;
+      }
+    }
+  }
+  &.custom-e-con-container-1420 {
+    .e-con {
+      --container-max-width: 1420px;
+    }
+    .container {
+      max-width: 1420px;
+      &.container-elementor {
+        max-width: 100%;
+      }
+    }
+  }
+  &.custom-e-con-container-1540 {
+    .e-con {
+      --container-max-width: 1540px;
+    }
+    .container {
+      max-width: 1540px;
+      &.container-elementor {
+        max-width: 100%;
+      }
+    }
+  }
+}

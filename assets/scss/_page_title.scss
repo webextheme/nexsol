@@ -1,0 +1,74 @@
+/*========================================*/
+/*-------------- [_Page_Title] -----------*/
+/*========================================*/
+.page-title-section {
+  background-position: center;
+  background-color: var(--webex-primary-color4);
+  min-height: 405px;
+  position: relative;
+  padding: 140px 0 150px;
+  display: flex;
+  align-items: center;
+  .breadcrumb-area {
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    .page-title {
+      color: var(--text-webex-primary-color4);
+      margin-bottom: 0;
+      word-break: break-word;
+      font-size: 46px;
+      line-height: 1.2;
+    }
+    .breadcrumbs-link {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 8px 40px;
+      border-radius: 50px;
+      margin-bottom: 0;
+      margin-top: 25px;
+      li {
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 400;
+        color: var(--text-webex-primary-color4);
+        a {
+          color: var(--text-webex-primary-color4);
+        }
+        &:after {
+          display: inline-block;
+          content: "/";
+          margin-left: 15px;
+          margin-right: 12px;
+          color: var(--text-webex-primary-color4);
+          font-size: 14px;
+        }
+        &.active {
+          color: var(--text-webex-primary-color4);
+        }
+        &:last-child {
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  &:after {
+    background: linear-gradient(180deg, var(--bg-white), var(--bg-silver));
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    opacity: 0;
+  }
+}
+.page-title-section.default-page-title {
+  background-image: url(../images/bg/page-title-bg.jpg);
+}
+.page-title-section.default-page-title:after {
+  opacity: 0.75;
+}

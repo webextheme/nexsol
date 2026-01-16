@@ -1,0 +1,55 @@
+/*----------- [Style 04] -----------*/
+.section_title_style_4 {
+  position: relative;
+  .subtitle {
+    color: var(--webex-primary-color3);
+    position: relative;
+    z-index: 1;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 6px 25px 6px 40px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    border: 1px solid rgba(var(--webex-primary-color-rgb), 0.1);
+    @media screen and (max-width: 425px) {
+      margin-bottom: 15px;
+    }
+    &:before {
+      position: absolute;
+      top: 22%;
+      left: 16px;
+      content: "";
+      border: 1px solid var(--webex-primary-color3);
+      height: 16px;
+      width: 16px;
+      transform: translateY(-8px);
+      border-radius: 50%;
+      opacity: 0.2;
+      animation: pulse-border 2s linear infinite;
+    }
+    &:after {
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      content: "";
+      background: var(--webex-primary-color3);
+      height: 8px;
+      width: 8px;
+      transform: translateY(-4px);
+      border-radius: 50%;
+    }
+  }
+  .title {
+    position: relative;
+    z-index: 1;
+    font-size: 48px;
+    line-height: 1.2;
+    @media screen and (max-width: 425px) {
+      font-size: 32px;
+      line-height: 1.3;
+    }
+  }
+}

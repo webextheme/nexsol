@@ -1,0 +1,74 @@
+.side-panel-content {
+  background: var(--bg-silver);
+  height: 100vh;
+  padding: 45px 40px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  -webkit-transition: all 0.7s ease 0s;
+  -o-transition: all 0.7s ease 0s;
+  transition: all 0.7s ease 0s;
+  width: 400px;
+  z-index: 999;
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+}
+.side-panel-content.side-panel-open {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+  @include box-shadow(0px 8px 16px 0px rgba(0, 0, 0, 0.3));
+}
+.close-icon {
+  position: absolute;
+  right: 40px;
+  top: 45px;
+  z-index: 3;
+}
+.close-icon > button {
+  cursor: pointer;
+  background: var(--webex-primary-color);
+  border-radius: 50%;
+  height: 42px;
+  width: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    i {
+      transform: rotate(90deg);
+    }
+  }
+}
+.close-icon > button i {
+  color: var(--text-webex-primary-color);
+  font-size: 24px;
+  line-height: 1;
+  transition: all 0.3s linear;
+}
+
+.side-panel {
+  cursor: pointer;
+  .side-panel-icon {
+    font-size: 28px;
+    line-height: 1.6;
+    color: var(--text-dark);
+  }
+}
+
+.offcanvas-overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+  &.overlay-open {
+    opacity: 0.5;
+    visibility: visible;
+    z-index: 900;
+  }
+}

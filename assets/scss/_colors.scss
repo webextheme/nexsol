@@ -1,0 +1,65 @@
+/*========================================*/
+/*-------------- [_Colors] ---------------*/
+/*========================================*/
+
+.text-gradient {
+  background: var(--text-gradient-color);
+  text-transform: capitalize;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*========== Background Colors ==========*/
+.bg-webex-primary-color {
+  background: var(--webex-primary-color);
+}
+.bg-webex-primary-color2 {
+  background: var(--webex-primary-color2);
+}
+.bg-webex-primary-color3 {
+  background: var(--webex-primary-color3);
+}
+.bg-webex-primary-color4 {
+  background: var(--webex-primary-color4);
+}
+.bg-webex-secondary-color {
+  background: var(--webex-secondary-color);
+}
+.bg-webex-secondary-color2 {
+  background: var(--webex-secondary-color2);
+}
+
+/*========== Text Color ==========*/
+.text-webex-primary-color {
+  color: var(--webex-primary-color);
+}
+.text-webex-primary-color2 {
+  color: var(--webex-primary-color2);
+}
+.text-webex-primary-color3 {
+  color: var(--webex-primary-color3);
+}
+.text-webex-primary-color4 {
+  color: var(--webex-primary-color4);
+}
+.text-webex-secondary-color {
+  color: var(--webex-secondary-color);
+}
+.text-webex-secondary-color2 {
+  color: var(--webex-secondary-color2);
+}
+.heading-text-color {
+  color: var(--heading-text-color);
+}
+.bg-gradient-color {
+  background: var(--bg-gradient-color);
+}
+.bg-gradient-reverse-color {
+  background: var(--bg-gradient-reverse-color);
+}
+
+.img-lum1 {
+  background-blend-mode: luminosity;
+  background: #e3d3ca;
+}

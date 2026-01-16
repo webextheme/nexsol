@@ -1,0 +1,124 @@
+/*===== Start Team Style4 =====*/
+.team-block-style_4 {
+  padding: 20px;
+  background: var(--bg-silver);
+  border-radius: 8px 8px 300px 300px;
+  .team-upper-part {
+    position: relative;
+    overflow: hidden;
+    background: var(--bg-white);
+    padding: 25px 15px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    .team-title {
+      margin-bottom: 5px;
+    }
+    .designation {
+      margin-bottom: 0;
+      font-size: 17px;
+      color: var(--webex-primary-color);
+      font-weight: 600;
+      line-height: 1;
+      letter-spacing: 0.02em;
+    }
+  }
+  .team-bottom-part {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    img {
+      @include transition(all 0.4s ease-out 0s);
+      @include transform(scale(1));
+      border-radius: 50%;
+    }
+    .team-social {
+      position: absolute;
+      bottom: 0;
+      border-radius: 8px;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      width: 45px;
+      height: 45px;
+      text-align: center;
+      background: var(--webex-primary-color);
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      @include transition(all 0.4s ease-out 0s);
+      &:hover {
+        border-radius: 0 0 8px 8px;
+      }
+      i {
+        color: var(--text-webex-primary-color);
+        font-size: 18px;
+        margin: 0 auto;
+      }
+      .social-list {
+        position: absolute;
+        bottom: 29px;
+        left: 0;
+        min-height: 100%;
+        visibility: hidden;
+        background: var(--webex-primary-color);
+        opacity: 0;
+        z-index: 1;
+        @include transition(all 500ms ease);
+        transform: scaleY(0);
+        transform-origin: bottom center;
+        border-radius: 8px;
+        padding: 0;
+        overflow: hidden;
+        li {
+          display: block;
+          margin: 0;
+          border-radius: 50%;
+          background: transparent;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          a {
+            background: transparent;
+            width: 45px;
+            height: 45px;
+            border-radius: 0;
+            i {
+              color: var(--text-webex-primary-color);
+              font-size: 16px;
+              margin: 0 auto;
+            }
+            &:hover {
+              background-color: var(--webex-primary-color2);
+              i {
+                color: var(--text-webex-primary-color2);
+              }
+            }
+          }
+        }
+      }
+      &:hover {
+        .social-list {
+          visibility: visible;
+          opacity: 1;
+          transform: scaleY(1);
+          border-radius: 8px 8px 0 0;
+        }
+      }
+    }
+  }
+  &:hover {
+    .team-upper-part {
+      .team-title {
+        color: var(--webex-primary-color);
+      }
+    }
+    .team-bottom-part {
+      img {
+        @include transform(scale(1.08));
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+article.post-wrap .post-title {
+  margin: 0px 0px 20px 0px;
+  padding: 0;
+  line-height: 1.3em;
+  font-weight: bold;
+  color: var(--heading-font-color);
+  -webkit-hyphens: unset;
+  -moz-hyphens: unset;
+  -ms-hyphens: unset;
+  hyphens: unset;
+  word-break: break-word;
+}
+article.default__news-single.sticky {
+  padding: 50px 60px 60px 60px;
+  border-top: 5px solid;
+  border-color: var(--webex-primary-color);
+}
+article.default__news-single.sticky .default__news-content-area {
+  margin-top: 0;
+}

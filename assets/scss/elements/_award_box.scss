@@ -1,0 +1,125 @@
+/*========================================*/
+/*------------- [_Awards] --------------*/
+/*========================================*/
+.elementor-widget-award-box-block {
+  counter-reset: my-sec-counter;
+}
+.award-box-inner-page-section-style1 {
+  counter-reset: my-sec-counter;
+}
+.webex-carousel .nexsol-slider-item .award-box-inner {
+  box-shadow: none;
+}
+.award-box-block-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr 30px 1fr 30px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 30px;
+  grid-column-gap: 30px;
+}
+.award-box-block-wrapper.nexsol-slider-wrapper {
+  display: block;
+}
+
+// Start Award Box Style3
+.award-box-block-style_1 {
+  @include transition(all 500ms ease);
+  border-radius: 6px;
+  .award-box-inner {
+    position: relative;
+    border-radius: 25px;
+    padding: 40px;
+    z-index: 1;
+    overflow: hidden;
+    border: 1px solid var(--theme-border-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: 991px) {
+      display: grid;
+      padding: 30px;
+      gap: 25px;
+      justify-content: unset;
+      border: 1px solid var(--theme-border-color);
+      background: var(--webex-secondary-color);
+      width: 100%;
+      margin: 0 auto;
+      border-radius: 20px;
+      text-align: center;
+    }
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+    &:after {
+      background: var(--webex-primary-color);
+      content: "";
+      position: absolute;
+      height: 130px;
+      width: 200px;
+      bottom: -15px;
+      right: -45px;
+      border-radius: 13% 91% 9% 13%;
+      filter: blur(90px);
+      z-index: 0;
+      transition: 400ms;
+      opacity: 0.5;
+    }
+    .title-area {
+      flex-basis: 30%;
+      .award-box-subtitle {
+        font-size: 14px;
+        position: relative;
+        display: inline-block;
+        padding-left: 20px;
+        &:after {
+          content: "";
+          background: var(--webex-primary-color);
+          position: absolute;
+          height: 8px;
+          width: 8px;
+          border-radius: 50%;
+          top: 9px;
+          left: 0;
+          opacity: 0.6;
+          animation: ZoomToFade2 1s infinite;
+        }
+      }
+      .award-box-title {
+        margin-top: 0;
+        margin-bottom: 15px;
+        position: relative;
+        z-index: 1;
+      }
+    }
+    .award-box-icon {
+      flex-basis: 20%;
+      display: inline-block;
+      color: var(--webex-primary-color);
+      &::before {
+        font-size: 48px;
+        line-height: 1;
+      }
+    }
+    .award-box-description {
+      flex-basis: 35%;
+      margin-bottom: 0;
+      position: relative;
+      z-index: 1;
+    }
+  }
+  &:hover {
+    transform: translateY(-10px);
+    .award-box-inner {
+      .counting {
+        transform: translateY(-15px);
+      }
+      &:after {
+        transform: scale(3.5);
+        bottom: 0;
+        right: 0;
+        opacity: 0.3;
+      }
+    }
+  }
+}

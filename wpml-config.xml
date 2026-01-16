@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wpml-config>
+
+  <custom-types>
+    <custom-type translate="1">wbx_header_builder</custom-type>
+    <custom-type translate="1">wbx_footer_builder</custom-type>
+    <custom-type translate="1">webex_projects</custom-type>
+  </custom-types>
+
+  <taxonomies>
+    <taxonomy translate="1">webex_projects_cats</taxonomy>
+  </taxonomies>
+
+  <custom-fields>
+    <custom-field action="translate">nexsol_metabox</custom-field>
+    <custom-field action="translate">meta_header_layout</custom-field>
+    <custom-field action="translate">meta_header_style</custom-field>
+    <custom-field action="translate">header_builder_id</custom-field>
+    <custom-field action="translate">meta_footer_layout</custom-field>
+    <custom-field action="translate">meta_footer_style</custom-field>
+    <custom-field action="translate">nexsol_builder_deta</custom-field>
+    <custom-field action="translate">nexsol_meta_enable_page_title</custom-field>
+    <custom-field action="translate">nexsol_meta_page_title_solid_background_options</custom-field>
+    <custom-field action="translate">nexsol_meta_page_title_background_options</custom-field>
+    <custom-field action="translate">nexsol_meta_page_title_background_overlay</custom-field>
+    <custom-field action="translate">nexsol_meta_page_title_spacing</custom-field>
+  </custom-fields>
+
+  <admin-texts>
+    <key name="nexsol_Theme_Option">
+      <key name="header_layout_style" />
+      <key name="header_builder_id" />
+      <key name="nexsol_enable_sticky_header" />
+      <key name="nexsol_blog_banner_enable" />
+      <key name="nexsol_blog_title" />
+      <key name="nexsol_post_date" />
+      <key name="nexsol_show_excerpt" />
+      <key name="nexsol_excerpt_length" />
+      <key name="nexsol_show_comments" />
+      <key name="nexsol_show_category" />
+      <key name="nexsol_post_author" />
+      <key name="nexsol_show_pagination" />
+      <key name="nexsol_show_readmore" />
+      <key name="nexsol_single_post_author" />
+      <key name="nexsol_single_post_date" />
+      <key name="nexsol_single_post_comments" />
+      <key name="nexsol_single_next_prev_post" />
+      <key name="nexsol_archive_banner" />
+      <key name="nexsol_archive_banner_title" />
+      <key name="nexsol_archive_show_pagination" />
+      <key name="nexsol_search_banner" />
+      <key name="nexsol_search_show_pagination" />
+    </key>
+  </admin-texts>
+
+  <elementor-widgets>
+
+    <widget name="webex-about-author">
+      <fields>
+        <field type="Title" editor_type="LINE">author_name</field>
+        <field type="Text" editor_type="LINE">author_designation</field>
+        <field type="Media" editor_type="MEDIA">about_author_s1_image</field>
+        <field type="Text" editor_type="LINE">about_author_s1_image_size</field>
+      </fields>
+    </widget>
+
+    <widget name="services-block">
+      <fields>
+        <field type="Repeater">services_items</field>
+        <fields-in-repeater for="services_items">
+          <field type="Title" editor_type="LINE">title</field>
+          <field type="Text" editor_type="LINE">subtitle</field>
+          <field type="Textarea" editor_type="AREA">description</field>
+          <field type="Text" editor_type="LINE">button_text</field>
+          <field type="Text" editor_type="LINE">counting</field>
+          <field type="Media" editor_type="MEDIA">photo</field>
+          <field type="Link" editor_type="LINK">title_link</field>
+          <field type="Link" editor_type="LINK">button_link</field>
+        </fields-in-repeater>
+      </fields>
+    </widget>
+
+  </elementor-widgets>
+
+</wpml-config>

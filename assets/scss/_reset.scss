@@ -1,0 +1,33 @@
+/*========================================*/
+/*------------ [_Reset_Styles] -----------*/
+/*========================================*/
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  outline: none !important;
+}
+::selection {
+  background: #0140a6;
+  color: #fff;
+  text-shadow: none;
+}
+::-moz-selection {
+  background: #0140a6;
+  color: #fff;
+  text-shadow: none;
+}
+::-webkit-scrollbar {
+  background-color: var(--bg-silver);
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--webex-primary-color);
+}
+.img-full {
+  width: 100%;
+}
+.elementor-element.elementor-top-section {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}

@@ -1,0 +1,41 @@
+.image-video-block-style2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  border: 1px solid var(--theme-border-color);
+  border-radius: 60px;
+  padding: 5px;
+  min-width: 320px;
+  @media screen and (max-width: 425px) {
+    min-width: 320px;
+  }
+  .video-link {
+    height: 68px;
+    width: 68px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 5;
+    background-size: cover;
+    .video-popup {
+      i {
+        color: var(--webex-primary-color);
+        font-size: 22px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+      }
+    }
+    .video-thumb {
+      height: 68px;
+      width: 68px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+  .video-title {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,103 @@
+/*===== Start Modern Project Style1 =====*/
+.modern-projects-block-style1 {
+  .modern-project-inner {
+    padding-bottom: 25px;
+    display: grid;
+    align-items: stretch;
+    grid-template-columns: 2.2fr 1fr;
+    gap: 30px;
+    @media screen and (max-width: 768px) {
+      grid-template-columns: auto;
+      gap: 10px;
+      padding-bottom: 60px;
+    }
+    .modern-project-left-part {
+      position: relative;
+      -webkit-transition: all 300ms ease;
+      transition: all 300ms ease;
+      border-radius: 50px;
+      .modern-project-thumb {
+        border-radius: 10px;
+        img {
+          border-radius: 10px;
+          height: 395px;
+          object-fit: cover;
+        }
+      }
+    }
+    .modern-project-content-part {
+      position: relative;
+      padding: 25px 30px 30px 30px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: var(--default-border-radius);
+      background: var(--webex-primary-color2);
+      z-index: 1;
+      -webkit-transition: all 500ms ease;
+      transition: all 500ms ease;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: space-between;
+      &:before {
+        position: absolute;
+        bottom: 30px;
+        left: 150px;
+        content: "";
+        height: 157px;
+        width: 133px;
+        background: url(../images/objects/modern-project-fire.png);
+        background-repeat: no-repeat;
+      }
+      .title-area {
+        .modern-project-title {
+          margin-top: 0;
+          margin-bottom: 10px;
+          color: var(--text-webex-primary-color4);
+        }
+        .modern-project-excerpt {
+          margin-bottom: 40px;
+          color: var(--text-webex-primary-color4);
+        }
+      }
+      .project-content-area {
+        .theme_btn_block_style1 {
+          margin-top: 20px;
+        }
+      }
+    }
+    &:hover {
+      .modern-project-left-part {
+        cursor: pointer;
+      }
+    }
+  }
+  .modern-project-inner.active {
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 30px;
+    }
+    .modern-project-left-part {
+      background: var(--webex-primary-color);
+      @media screen and (max-width: 1024px) {
+        margin-bottom: 20px;
+      }
+      .title-part {
+        .modern-project-title {
+          color: var(--text-webex-primary-color);
+        }
+        .modern-project-count {
+          -webkit-text-stroke-color: var(--text-webex-primary-color);
+        }
+      }
+    }
+    .modern-project-content-part {
+      opacity: 1;
+      height: auto;
+      visibility: visible;
+      transform: scaleY(1);
+      background: var(--webex-primary-color2);
+      @media screen and (max-width: 1024px) {
+        margin-top: 0;
+      }
+    }
+  }
+}

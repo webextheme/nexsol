@@ -1,0 +1,102 @@
+/*===== Start Project Style5 =====*/
+.project-block-style_5 {
+  border-radius: 10px;
+  .project-thumb {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    img {
+      width: 100%;
+      -webkit-transform: scale(1.01);
+      transform: scale(1.01);
+      transition: all 900ms ease;
+      height: 515px;
+      width: 700px;
+      object-fit: cover;
+    }
+  }
+  .project-details-wrap {
+    position: relative;
+    .project-details {
+      padding: 20px 0 0 0;
+      border-top: none;
+      position: relative;
+      overflow: hidden;
+      @include transition(all 200ms ease-out 0s);
+      .project-title {
+        margin-bottom: 0;
+        a {
+          color: var(--heading-font-color);
+          &:hover {
+            color: var(--webex-primary-color);
+          }
+        }
+      }
+      .project-category {
+        a {
+          font-size: 14px;
+          line-height: 1;
+          color: var(--body-font-color);
+          margin-right: 5px;
+          font-weight: 700;
+        }
+      }
+    }
+    .project-details-hover {
+      background: var(--webex-primary-color);
+      padding: 21px 30px 21px 30px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 0 10px 0 0;
+      opacity: 0;
+      z-index: 1;
+      @include transition(all 400ms ease-out 0s);
+      .project-title {
+        margin-bottom: 0;
+        a {
+          color: #fff;
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+      .project-category {
+        a {
+          font-size: 14px;
+          line-height: 1;
+          color: #fff;
+          margin-right: 5px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  &:hover {
+    .project-thumb {
+      img {
+        filter: grayscale(1);
+        @include transform(scale(1.2) rotate(3deg));
+      }
+      .project-details {
+        opacity: 1;
+        bottom: 20px;
+        left: 30px;
+        .project-category {
+          a {
+            &:first-child {
+              margin-left: 40px;
+            }
+          }
+        }
+      }
+    }
+    .project-details {
+      opacity: 0;
+    }
+    .project-details-hover {
+      top: -35px;
+      opacity: 1;
+    }
+  }
+}

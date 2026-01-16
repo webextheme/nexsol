@@ -1,0 +1,12 @@
+/*===== Start Clients Common =====*/
+.client-block-items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr 30px 1fr 30px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 30px;
+  grid-column-gap: 30px;
+}
+.client-block-items.nexsol-slider-wrapper {
+  display: block;
+}

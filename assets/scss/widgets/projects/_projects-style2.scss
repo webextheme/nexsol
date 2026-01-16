@@ -1,0 +1,86 @@
+/*===== Start Project Style2 =====*/
+.project-block-style_2 {
+  position: relative;
+  .project-thumb {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    img {
+      -webkit-transform: scale(1.01);
+      transform: scale(1.01);
+      transition: all 500ms ease;
+      width: 100%;
+      object-fit: cover;
+      @media screen and (max-width: 425px) {
+        height: 400px;
+        object-fit: cover;
+      }
+    }
+  }
+  .project-details-wrap {
+    position: relative;
+    .project-details {
+      position: absolute;
+      max-width: 495px;
+      bottom: 0;
+      left: 0;
+      .project-details-inner {
+        background: var(--webex-primary-color);
+        padding: 35px 60px 30px 30px;
+        @include transition(all 400ms ease-out 0s);
+        clip-path: polygon(0% 1.25%, 38.636% 8.125%, 81.818% 17.813%, 100% 0%, 100% 100%, 0% 100%, 0% 1.25%);
+        border-radius: 8px;
+        .project-title {
+          margin-bottom: 0;
+          a {
+            color: #fff;
+            &:hover,
+            &:focus {
+              color: #fff;
+            }
+          }
+        }
+        .project-category {
+          a {
+            color: #fff;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+    .project-link-icon {
+      position: absolute;
+      right: 60px;
+      top: -15px;
+      a {
+        background: #fff;
+        display: inline-flex;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        color: #000;
+        font-size: 18px;
+        @include transition(all 300ms ease-out 0s);
+        &:hover {
+          background: var(--webex-primary-color3);
+          color: var(--text-webex-primary-color3);
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+  &:hover {
+    .project-thumb {
+      img {
+        @include transform(scale(1.2) rotate(3deg));
+      }
+    }
+    .project-link-icon {
+      a {
+        transform: rotate(45deg);
+      }
+    }
+  }
+}

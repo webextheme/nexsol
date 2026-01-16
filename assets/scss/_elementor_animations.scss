@@ -1,0 +1,225 @@
+/*========================================*/
+/*-------- [_Elementor_Animations] -------*/
+/*========================================*/
+/* FadeInUp */
+.webex_fadeinup {
+  -webkit-animation-name: webex_fadeinup;
+  animation-name: webex_fadeinup;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+}
+
+@-webkit-keyframes webex_fadeinup {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(60px);
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes webex_fadeinup {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(60px);
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+/* FadeInLeft */
+.webex_fadeinleft {
+  -webkit-animation-name: webex_fadeinleft;
+  animation-name: webex_fadeinleft;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+}
+
+@-webkit-keyframes webex_fadeinleft {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-60px);
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes webex_fadeinleft {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-60px);
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+/* FadeInRight */
+.webex_fadeinright {
+  -webkit-animation-name: webex_fadeinright;
+  animation-name: webex_fadeinright;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+}
+
+@-webkit-keyframes webex_fadeinright {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(60px);
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes webex_fadeinright {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(60px);
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+/* FadeInDown */
+.webex_fadeindown {
+  -webkit-animation-name: webex_fadeindown;
+  animation-name: webex_fadeindown;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+}
+
+@-webkit-keyframes webex_fadeindown {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-60px);
+    transform: translateY(-60px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes webex_fadeindown {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-60px);
+    transform: translateY(-60px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+/* FadeIn */
+.webex_fadein {
+  -webkit-animation-name: webex_fadein;
+  animation-name: webex_fadein;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+}
+
+@-webkit-keyframes webex_fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes webex_fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* PopUp */
+.webex_popup {
+  -webkit-animation-name: webex_popup;
+  animation-name: webex_popup;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+}
+
+@-webkit-keyframes webex_popup {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(70%);
+    transform: scale(70%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(100%);
+    transform: scale(100%);
+  }
+}
+
+@keyframes webex_popup {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(70%);
+    transform: scale(70%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(100%);
+    transform: scale(100%);
+  }
+}
+
+/* Infinite Rotate */
+.webex_infiniterotate {
+  animation: webex_infiniterotate 10s linear infinite;
+}
+
+@-webkit-keyframes webex_infiniterotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes webex_infiniterotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn);
+  }
+}

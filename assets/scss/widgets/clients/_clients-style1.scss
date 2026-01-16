@@ -1,0 +1,21 @@
+/*===== Start Client Style1 =====*/
+.client-block-items {
+  .client-item-style_1 {
+    padding: 35px;
+    text-align: center;
+    @include transition(all 300ms ease-out 0s);
+    img {
+      height: 35px;
+      object-fit: contain;
+      margin: 0 auto;
+      transform: scale(1);
+      @include transition(all 300ms ease-out 0s);
+    }
+    &:hover {
+      img {
+        opacity: 1;
+        transform: scale(1.05);
+      }
+    }
+  }
+}

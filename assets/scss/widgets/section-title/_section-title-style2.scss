@@ -1,0 +1,41 @@
+/*----------- [Style 02] -----------*/
+.section_title_style_2 {
+  position: relative;
+  .subtitle {
+    font-family: var(--section-subtitle-font-family);
+    font-size: var(--section-subtitle-font-size);
+    font-weight: var(--section-subtitle-font-weight);
+    line-height: var(--section-subtitle-line-height);
+    letter-spacing: var(--section-subtitle-letter-spacing);
+    color: var(--text-dark);
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    padding: 0px 0 0px 110px;
+    &:before {
+      position: absolute;
+      top: 3px;
+      left: 0;
+      content: "";
+      height: 15px;
+      width: 92px;
+      background: url(../images/objects/section-title-arrow-white.png);
+      background-repeat: no-repeat;
+    }
+  }
+  .title {
+    font-family: var(--section-title-font-family);
+    font-size: var(--section-title-font-size);
+    font-weight: var(--section-title-font-weight);
+    line-height: var(--section-title-line-height);
+    letter-spacing: var(--section-title-letter-spacing);
+    position: relative;
+    z-index: 1;
+    @media screen and (max-width: 425px) {
+      font-size: 32px;
+      line-height: 1.3;
+    }
+  }
+}

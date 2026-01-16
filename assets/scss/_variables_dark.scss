@@ -1,0 +1,38 @@
+[data-layout-mood="dark"]:root {
+  $webex-primary-color: #b6542a;
+  --webex-primary-color: var(--webex-primary-color3);
+  --webex-primary-color-rgb: #{hexToRGB($webex-primary-color)};
+  --text-webex-primary-color: #fff;
+
+  --header-default-bg-color: var(--bg-silver);
+  --header-default-nav-color: var(--heading-font-color);
+  --header-default-nav-hover-color: var(--webex-primary-color);
+
+  --header-default-nav-child-color: var(--heading-font-color);
+  --header-default-nav-child-hover-color: var(--text-webex-primary-color);
+
+  --heading-font-color: #fff;
+
+  --body-color: #000;
+  --body-font-color: #b2b2b2;
+
+  --bg-white: #000;
+  --bg-dark: #fff;
+  --bg-white2: #0a0a0a;
+  --bg-silver-light: #656464;
+  --bg-silver: #191919;
+
+  --text-white: #000;
+  --text-dark: #fff;
+  --text-gray: #656464;
+
+  --default-news-bg-color: var(--widget-content-bg-color);
+  --default-news-border: 1px solid rgba(255, 255, 255, 0.1);
+  --default-header-border-color: rgba(255, 255, 255, 0.1);
+
+  --widget-content-bg-color: #191919;
+  --theme-border-color: rgba(var(--bg-white-rgb), 0.1);
+  --theme-primary-border-color: rgba(var(--bg-dark-rgb), 0.1);
+  --theme-widget-border-color: #333;
+  --form-placeholder-color: #b1b1b1;
+}

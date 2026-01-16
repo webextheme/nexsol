@@ -1,0 +1,58 @@
+/*===== Start Feature Box Style2 =====*/
+.feature-box-block-style_2 {
+  position: relative;
+  @include transition(all 300ms ease);
+  .feature-box-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .feature-box-content {
+      position: relative;
+      background: var(--bg-white);
+      border-radius: 20px;
+      border: 1px solid var(--theme-border-color);
+      padding: 30px 60px;
+      margin-right: -3px;
+      z-index: 1;
+      .counting {
+        position: absolute;
+        left: -20px;
+        top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 40px;
+        line-height: 1;
+        background: var(--webex-primary-color);
+        color: var(--text-webex-primary-color);
+        border-radius: 5px;
+        &:after {
+          content: "";
+          position: absolute;
+          background: rgba(var(--webex-primary-color-rgb), 0.6);
+          height: 40px;
+          width: 40px;
+          left: 10px;
+          top: 0;
+          border-radius: 5px;
+          z-index: -1;
+        }
+      }
+      .feature-box-description {
+        margin-bottom: 0;
+      }
+    }
+    .feature-box-thumb {
+      border-radius: 20px;
+      margin-left: -3px;
+      flex-shrink: 0;
+      @media screen and (max-width: 1200px) {
+        display: none;
+      }
+      img {
+        border-radius: var(--default-border-radius);
+      }
+    }
+  }
+}

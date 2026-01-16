@@ -1,0 +1,32 @@
+/*========================================*/
+/*----------------- [_Faqs] --------------*/
+/*========================================*/
+.faq-title {
+	font-size: 64px;
+	line-height: 1.2;
+	@media screen and (max-width: 375px){
+		font-size: 54px;
+	}
+}
+.frequently-asked-question-section {
+	position: relative;
+	&:after {
+		background: url(../images/bg/banner1.jpg);
+		background-size: cover;
+		content: "";
+		height: 108%;
+		width: 700px;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		z-index: 0;
+		@media screen and (max-width: 1024px){
+			width: 290px;
+			opacity: 0.1;
+			height: 100%;
+		}
+		@media screen and (max-width: 768px){
+			display: none;
+		}
+	}
+}

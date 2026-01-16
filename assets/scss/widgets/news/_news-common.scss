@@ -1,0 +1,11 @@
+.news-block-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr 30px 1fr 30px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 30px;
+  grid-column-gap: 30px;
+}
+.news-block-wrapper.nexsol-slider-wrapper {
+  display: block;
+}

@@ -1,0 +1,24 @@
+/*========================================*/
+/*--------- [_Featured_Icon_Box] ---------*/
+/*========================================*/
+.featured-icon-box {
+	position: relative;
+	@include transition(all 0.5s ease-in-out 0s);
+	display: flex;
+	align-items: start;
+	.featured-icon {
+		i {
+			&:before {
+				font-size: 48px;
+				line-height: 1.3;
+				margin-right: 30px;
+				color: var(--webex-primary-color);
+			}
+		}
+	}
+	.featured-content {
+		.featured-title {
+			margin-bottom: 10px;
+		}
+	}
+}

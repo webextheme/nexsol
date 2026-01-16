@@ -1,0 +1,28 @@
+/*===== Start Feature Box Style1 =====*/
+.feature-box-block-style_1 {
+  position: relative;
+  @include transition(all 300ms cubic-bezier(0.14, 0.38, 0.42, 0.78));
+  .feature-box-inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.25);
+    padding: 5px 30px 5px 5px;
+    border-radius: 60px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    max-width: fit-content;
+    backdrop-filter: blur(20px);
+    @include transition(all 300ms ease);
+    .feature-box-thumb {
+      border-radius: 50%;
+      margin-right: 15px;
+      img {
+        width: 65px;
+        border-radius: 50%;
+      }
+    }
+    .feature-box-title {
+      margin-bottom: 0;
+    }
+  }
+}

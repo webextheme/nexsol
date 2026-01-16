@@ -1,0 +1,18 @@
+/*========================================*/
+/*---------- [_Working_Hours] ----------*/
+/*========================================*/
+.working-hours {
+  ul {
+    list-style: none;
+    padding-left: 0;
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      strong {
+        color: var(--webex-primary-color);
+      }
+    }
+  }
+}
