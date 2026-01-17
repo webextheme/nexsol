@@ -78,7 +78,7 @@
   --webex-primary-color4: #0a2e38;
   --text-webex-primary-color4: #fff;
   --webex-primary-color4-rgb: 10, 46, 56;
-  --webex-secondary-color: #141125;
+  --webex-secondary-color: #0f0629;
   --text-webex-secondary-color: #fff;
   --webex-secondary-color-rgb: 20, 17, 37;
   --webex-secondary-color2: #2a283c;
@@ -123,7 +123,7 @@
   --bg-white: #ffffff;
   --bg-dark: #121414;
   --bg-light-pink: #faf3f3;
-  --bg-silver: #f2f5f6;
+  --bg-silver: #f3f2fd;
   --bg-silver-light: #eff1f9;
   --bg-silver-light2: #f0f1f7;
   --bg-silver-deep: #ecdaee;
@@ -165,7 +165,7 @@
   --default-news-bg-color: var(--widget-content-bg-color);
   --default-news-border: 1px solid #e5e7de;
   --default-header-border-color: #e5e7de;
-  --widget-content-bg-color: #f2f5f6;
+  --widget-content-bg-color: #f3f2fd;
   --theme-border-color: #dedfde;
   --theme-primary-border-color: rgba(var(--bg-dark-rgb), 0.1);
   --theme-widget-border-color: #dedfde;
