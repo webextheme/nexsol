@@ -66,15 +66,15 @@
 ===========================================
 */
 :root {
-  --webex-primary-color: #ff6701;
+  --webex-primary-color: #6050f4;
   --text-webex-primary-color: #fff;
-  --webex-primary-color-rgb: 255, 103, 1;
-  --webex-primary-color2: #121110;
+  --webex-primary-color-rgb: 96, 80, 244;
+  --webex-primary-color2: #0f0629;
   --text-webex-primary-color2: #fff;
-  --webex-primary-color2-rgb: 18, 17, 16;
-  --webex-primary-color3: #d5ef87;
+  --webex-primary-color2-rgb: 15, 6, 41;
+  --webex-primary-color3: #2cefbb;
   --text-webex-primary-color3: #000;
-  --webex-primary-color3-rgb: 213, 239, 135;
+  --webex-primary-color3-rgb: 44, 239, 187;
   --webex-primary-color4: #0a2e38;
   --text-webex-primary-color4: #fff;
   --webex-primary-color4-rgb: 10, 46, 56;
@@ -1961,9 +1961,7 @@ div[class*="kursor"].kursor--1.kursor--down {
 .project-sidebar-widget .wp-block-latest-posts li a:hover {
   color: var(--webex-primary-color);
 }
-.blog-sidebar-widget.widget_nav_menu ul li:before,
-.blog-sidebar-widget.widget_categories ul li:before,
-.blog-sidebar-widget.widget_archive ul li:before,
+.blog-sidebar-widget.widget_nav_menu ul li:before, .blog-sidebar-widget.widget_categories ul li:before, .blog-sidebar-widget.widget_archive ul li:before,
 .project-sidebar-widget.widget_nav_menu ul li:before,
 .project-sidebar-widget.widget_categories ul li:before,
 .project-sidebar-widget.widget_archive ul li:before {
@@ -1974,9 +1972,7 @@ div[class*="kursor"].kursor--1.kursor--down {
   float: left;
   color: var(--webex-primary-color);
 }
-.blog-sidebar-widget.widget_nav_menu ul li a:hover,
-.blog-sidebar-widget.widget_categories ul li a:hover,
-.blog-sidebar-widget.widget_archive ul li a:hover,
+.blog-sidebar-widget.widget_nav_menu ul li a:hover, .blog-sidebar-widget.widget_categories ul li a:hover, .blog-sidebar-widget.widget_archive ul li a:hover,
 .project-sidebar-widget.widget_nav_menu ul li a:hover,
 .project-sidebar-widget.widget_categories ul li a:hover,
 .project-sidebar-widget.widget_archive ul li a:hover {
@@ -4746,9 +4742,7 @@ li.post-cat a:nth-child(2) {
   background: var(--bg-silver);
   border-color: var(--theme-border-color);
 }
-.page-links .post-page-numbers:hover,
-.page-links .post-page-numbers:focus,
-.page-links .post-page-numbers.current {
+.page-links .post-page-numbers:hover, .page-links .post-page-numbers:focus, .page-links .post-page-numbers.current {
   background-color: var(--webex-primary-color);
   border-color: var(--webex-primary-color);
   color: var(--text-webex-primary-color);
@@ -7126,8 +7120,7 @@ select {
     line-height: 72px;
   }
 }
-.why-choose-us-image-block .video-popup-left a::before,
-.why-choose-us-image-block .video-popup-left a::after {
+.why-choose-us-image-block .video-popup-left a::before, .why-choose-us-image-block .video-popup-left a::after {
   border-radius: 0;
 }
 
@@ -8527,22 +8520,18 @@ select {
   -o-transition: all 300ms ease;
   transition: all 300ms ease;
 }
-.feature-box-block-style_3 .feature-box-inner:hover .feature-box-content,
-.feature-box-block-style_3 .feature-box-inner.active .feature-box-content {
+.feature-box-block-style_3 .feature-box-inner:hover .feature-box-content, .feature-box-block-style_3 .feature-box-inner.active .feature-box-content {
   padding-left: 100px;
 }
 @media screen and (max-width: 1024px) {
-  .feature-box-block-style_3 .feature-box-inner:hover .feature-box-content,
-  .feature-box-block-style_3 .feature-box-inner.active .feature-box-content {
+  .feature-box-block-style_3 .feature-box-inner:hover .feature-box-content, .feature-box-block-style_3 .feature-box-inner.active .feature-box-content {
     padding-left: 30px;
   }
 }
-.feature-box-block-style_3 .feature-box-inner:hover .feature-box-content .counting,
-.feature-box-block-style_3 .feature-box-inner.active .feature-box-content .counting {
+.feature-box-block-style_3 .feature-box-inner:hover .feature-box-content .counting, .feature-box-block-style_3 .feature-box-inner.active .feature-box-content .counting {
   transform: scale(1);
 }
-.feature-box-block-style_3 .feature-box-inner:hover .feature-box-thumb,
-.feature-box-block-style_3 .feature-box-inner.active .feature-box-thumb {
+.feature-box-block-style_3 .feature-box-inner:hover .feature-box-thumb, .feature-box-block-style_3 .feature-box-inner.active .feature-box-thumb {
   transform: scaleY(1);
 }
 .feature-box-block-style_3 .feature-box-inner .feature-box-content {
@@ -10114,8 +10103,7 @@ body.elementor-editor-active #headers {
   visibility: visible;
   transform: scaleY(1);
 }
-.header-default-style .main-menu .main-menu-inner .main-nav-menu > li:hover > a,
-.header-default-style .main-menu .main-menu-inner .main-nav-menu > li.current_page_item > a {
+.header-default-style .main-menu .main-menu-inner .main-nav-menu > li:hover > a, .header-default-style .main-menu .main-menu-inner .main-nav-menu > li.current_page_item > a {
   color: var(--header-default-nav-hover-color);
 }
 .header-default-style .main-menu .main-menu-inner .main-menu-right {
@@ -10380,8 +10368,7 @@ body.elementor-editor-active #headers {
   visibility: visible;
   transform: scaleY(1);
 }
-.webex_main-menu .main-menu-inner .main-nav-menu > li:hover > a,
-.webex_main-menu .main-menu-inner .main-nav-menu > li.current_page_item > a {
+.webex_main-menu .main-menu-inner .main-nav-menu > li:hover > a, .webex_main-menu .main-menu-inner .main-nav-menu > li.current_page_item > a {
   color: var(--header-default-nav-hover-color);
 }
 .webex_main-menu .main-menu-inner .main-menu-right {
@@ -11565,8 +11552,7 @@ header .custom_elementor_header.header_transparent {
 .team-block-style_1 .team-upper-part .team-bottom-part .team-title a {
   color: var(--text-webex-primary-color2);
 }
-.team-block-style_1 .team-upper-part .team-bottom-part .team-title a:hover,
-.team-block-style_1 .team-upper-part .team-bottom-part .team-title a:focus {
+.team-block-style_1 .team-upper-part .team-bottom-part .team-title a:hover, .team-block-style_1 .team-upper-part .team-bottom-part .team-title a:focus {
   color: var(--webex-primary-color);
 }
 .team-block-style_1 .team-upper-part .team-bottom-part .team-designation {
@@ -11838,8 +11824,7 @@ header .custom_elementor_header.header_transparent {
 .team-block-style_3 .team-hover-info .team-title a {
   color: #fff;
 }
-.team-block-style_3 .team-hover-info .team-title a:hover,
-.team-block-style_3 .team-hover-info .team-title a:focus {
+.team-block-style_3 .team-hover-info .team-title a:hover, .team-block-style_3 .team-hover-info .team-title a:focus {
   color: var(--webex-primary-color);
 }
 .team-block-style_3 .team-hover-info .team-designation {
@@ -15472,8 +15457,7 @@ article.default__news-single.sticky .default__news-content-area {
   border-radius: 25px;
   margin-right: 5px;
 }
-.project-section .project-filter ul li:hover,
-.project-section .project-filter ul li.active {
+.project-section .project-filter ul li:hover, .project-section .project-filter ul li.active {
   background: var(--webex-primary-color);
   color: #fff;
   -moz-transition: all 0.2s ease-in-out;
@@ -15696,8 +15680,7 @@ article.default__news-single.sticky .default__news-content-area {
 .project-block-style_2 .project-details-wrap .project-details .project-details-inner .project-title a {
   color: #fff;
 }
-.project-block-style_2 .project-details-wrap .project-details .project-details-inner .project-title a:hover,
-.project-block-style_2 .project-details-wrap .project-details .project-details-inner .project-title a:focus {
+.project-block-style_2 .project-details-wrap .project-details .project-details-inner .project-title a:hover, .project-block-style_2 .project-details-wrap .project-details .project-details-inner .project-title a:focus {
   color: #fff;
 }
 .project-block-style_2 .project-details-wrap .project-details .project-details-inner .project-category a {
@@ -16172,8 +16155,7 @@ article.default__news-single.sticky .default__news-content-area {
   border-radius: 25px;
   margin-right: 5px;
 }
-.gallery-section .gallery-filter ul li:hover,
-.gallery-section .gallery-filter ul li.active {
+.gallery-section .gallery-filter ul li:hover, .gallery-section .gallery-filter ul li.active {
   background: var(--webex-primary-color);
   color: #fff;
   -moz-transition: all 0.2s ease-in-out;
@@ -16291,8 +16273,7 @@ article.default__news-single.sticky .default__news-content-area {
   border-radius: 25px;
   margin-right: 5px;
 }
-.product-section .product-filter ul li:hover,
-.product-section .product-filter ul li.active {
+.product-section .product-filter ul li:hover, .product-section .product-filter ul li.active {
   background: var(--webex-primary-color);
   color: #fff;
   -moz-transition: all 0.2s ease-in-out;
