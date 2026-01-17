@@ -1,7 +1,7 @@
 //======= Variables ========//
-$webex-primary-color: #ff6701;
-$webex-primary-color2: #121110;
-$webex-primary-color3: #d5ef87;
+$webex-primary-color: #6050f4;
+$webex-primary-color2: #0f0629;
+$webex-primary-color3: #2cefbb;
 $webex-primary-color4: #0a2e38;
 $webex-secondary-color: #141125;
 $webex-secondary-color2: #2a283c;
@@ -12,13 +12,13 @@ $webex-bg-dark: #000;
   @return red($hex), green($hex), blue($hex);
 }
 :root {
-  --webex-primary-color: #ff6701;
+  --webex-primary-color: #6050f4;
   --text-webex-primary-color: #fff;
   --webex-primary-color-rgb: #{hexToRGB($webex-primary-color)};
-  --webex-primary-color2: #121110;
+  --webex-primary-color2: #0f0629;
   --text-webex-primary-color2: #fff;
   --webex-primary-color2-rgb: #{hexToRGB($webex-primary-color2)};
-  --webex-primary-color3: #d5ef87;
+  --webex-primary-color3: #2cefbb;
   --text-webex-primary-color3: #000;
   --webex-primary-color3-rgb: #{hexToRGB($webex-primary-color3)};
   --webex-primary-color4: #0a2e38;
@@ -76,7 +76,7 @@ $webex-bg-dark: #000;
   --bg-white: #ffffff;
   --bg-dark: #121414;
   --bg-light-pink: #faf3f3;
-  --bg-silver: #f2f5f6;
+  --bg-silver: #f3f2fd;
   --bg-silver-light: #eff1f9;
   --bg-silver-light2: #f0f1f7;
   --bg-silver-deep: #ecdaee;
@@ -126,7 +126,7 @@ $webex-bg-dark: #000;
   --default-news-border: 1px solid #e5e7de;
   --default-header-border-color: #e5e7de;
 
-  --widget-content-bg-color: #f2f5f6;
+  --widget-content-bg-color: #f3f2fd;
   --theme-border-color: #dedfde;
   --theme-primary-border-color: rgba(var(--bg-dark-rgb), 0.1);
   --theme-widget-border-color: #dedfde;
