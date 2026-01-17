@@ -66,19 +66,19 @@
 ===========================================
 */
 :root {
-  --webex-primary-color: #6050f4;
+  --webex-primary-color: #ff6701;
   --text-webex-primary-color: #fff;
-  --webex-primary-color-rgb: 96, 80, 244;
-  --webex-primary-color2: #0f0629;
+  --webex-primary-color-rgb: 255, 103, 1;
+  --webex-primary-color2: #121110;
   --text-webex-primary-color2: #fff;
-  --webex-primary-color2-rgb: 15, 6, 41;
-  --webex-primary-color3: #2cefbb;
+  --webex-primary-color2-rgb: 18, 17, 16;
+  --webex-primary-color3: #d5ef87;
   --text-webex-primary-color3: #000;
-  --webex-primary-color3-rgb: 44, 239, 187;
+  --webex-primary-color3-rgb: 213, 239, 135;
   --webex-primary-color4: #0a2e38;
   --text-webex-primary-color4: #fff;
   --webex-primary-color4-rgb: 10, 46, 56;
-  --webex-secondary-color: #0f0629;
+  --webex-secondary-color: #141125;
   --text-webex-secondary-color: #fff;
   --webex-secondary-color-rgb: 20, 17, 37;
   --webex-secondary-color2: #2a283c;
@@ -123,7 +123,7 @@
   --bg-white: #ffffff;
   --bg-dark: #121414;
   --bg-light-pink: #faf3f3;
-  --bg-silver: #f3f2fd;
+  --bg-silver: #f2f5f6;
   --bg-silver-light: #eff1f9;
   --bg-silver-light2: #f0f1f7;
   --bg-silver-deep: #ecdaee;
@@ -165,7 +165,7 @@
   --default-news-bg-color: var(--widget-content-bg-color);
   --default-news-border: 1px solid #e5e7de;
   --default-header-border-color: #e5e7de;
-  --widget-content-bg-color: #f3f2fd;
+  --widget-content-bg-color: #f2f5f6;
   --theme-border-color: #dedfde;
   --theme-primary-border-color: rgba(var(--bg-dark-rgb), 0.1);
   --theme-widget-border-color: #dedfde;
@@ -14861,6 +14861,7 @@ header .custom_elementor_header.header_transparent {
   margin-bottom: 30px;
   border: var(--default-news-border);
   padding: 45px;
+  border-radius: 8px;
 }
 .default__news-with-sidebar .default__news-single .default__news-post-thumbnail-area {
   position: relative;

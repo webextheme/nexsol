@@ -8,7 +8,7 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
-Description: Nexsol is a clean and modern Coworking Space WordPress Theme. Nexsol is very easy to customize with a strong admin panel.
+Description: Nexsol is a clean and modern Fire & Security Services WordPress Theme. Nexsol is very easy to customize with a strong admin panel.
 
 == Installation ==
 1. In your WordPress dashboard, go to Appearance > Themes.
